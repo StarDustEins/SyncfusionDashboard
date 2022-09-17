@@ -308,6 +308,7 @@
         int bedSideSettleCount = hourly.Sum(x => x.BedSideSettleCount);
         int windowSettleCount = hourly.Sum(x => x.WindowSettleCount);
         
+        // doan nay la doan code em muon hien thi ra 1 list cac object co chung 1 property
         int totalRegisterCount = hourly.Sum(x => x.WindowRegisterCount + x.BedSideRegisterCount);
         int totalSettleCount = hourly.Sum(x => x.WindowSettleCount + x.BedSideSettleCount);
 
