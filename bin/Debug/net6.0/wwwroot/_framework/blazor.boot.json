@@ -215,13 +215,13 @@
       "mscorlib.dll": "sha256-MnMyZHtcymf0sLxXeFBbQZVsdNdxT0GXJaa9t3ZdSek=",
       "netstandard.dll": "sha256-+SGdnDhVMiZ9hq0EsYwJ+mcK0odf3bAtXnSKLorGDCs=",
       "System.Private.CoreLib.dll": "sha256-mqfalNg3wC8XHlyA+j5ioNcnc0kt4prNudKdyJoaYaU=",
-      "SyncfusionBlazorApp.dll": "sha256-EE2zVCsVBq8Q9wEJRKH0qpuBhsRLMyNZkY44y36GaB8="
+      "SyncfusionBlazorApp.dll": "sha256-X+oQXwokiO0LoEpJMM8Ldc7E6qqPpMEPyAKcuPnFQ4A="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "SyncfusionBlazorApp.pdb": "sha256-XZs5ttVMwxjQbwPirJkA+UGKD3ku2XNQ3Dupnzjyi9w="
+      "SyncfusionBlazorApp.pdb": "sha256-AB0k3pKT4g7c\/8g6NZo4WIosm2TSMFR7ejoaXDTItdk="
     },
     "runtime": {
       "dotnet.6.0.9.9nxfpacqyh.js": "sha256-Azk5sbYFVo84h8NpIst9roIPGLH2y8ewQ9SY\/sUHvgs=",

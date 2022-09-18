@@ -2,6 +2,7 @@
 @using Syncfusion.Blazor.Layouts
 @using Syncfusion.Blazor.Charts
 @using System.Runtime.InteropServices
+@using Syncfusion.Blazor.Calendars
 
 <PageTitle>Dashboard</PageTitle>
 
@@ -12,7 +13,7 @@
     <ContentTemplate>
         <div class="root-container">
             <div class="item-container bed-side-settle">
-                <p>@(Math.Round(100.0*30/90,2))%</p>
+                <p>@(Math.Round(100.0 * 30 / 90, 2))%</p>
                 <div class="auto-left">
                     <span class="income-icon e-icon"></span>
                 </div>
@@ -42,7 +43,7 @@
     <ContentTemplate>
         <div class="root-container">
             <div class="item-container window-settle">
-                <p>@(Math.Round(100.0*30/90,2))%</p>
+                <p>@(Math.Round(100.0 * 30 / 90, 2))%</p>
                 <div class="auto-left">
                     <span class="balance-icon e-icon"></span>
                 </div>
@@ -53,39 +54,39 @@
         </div>
     </ContentTemplate>
 </DashboardLayoutPanel>
-    <DashboardLayoutPanel Column="6" Row="0" SizeX="2" SizeY="1">
-        <ContentTemplate>
-            <div class="root-container">
-                <div class="item-container window-register">
-                    <p>35</p>
-                    <div class="auto-left">
-                        <span class="transaction-icon e-icon"></span>
-                    </div>
-                </div>
-                <div class="bottom-container">
-                    <p>床旁登记人次</p>
+<DashboardLayoutPanel Column="6" Row="0" SizeX="2" SizeY="1">
+    <ContentTemplate>
+        <div class="root-container">
+            <div class="item-container window-register">
+                <p>35</p>
+                <div class="auto-left">
+                    <span class="transaction-icon e-icon"></span>
                 </div>
             </div>
-        </ContentTemplate>
-    </DashboardLayoutPanel>
-    <DashboardLayoutPanel Column="8" Row="0" SizeX="2" SizeY="1">
-        <ContentTemplate>
-            <div class="root-container">
-                <div class="item-container expense">
-                    <p>35</p>
-                    <div class="auto-left">
-                        <span class="balance-icon e-icon"></span>
-                    </div>
-                </div>
-                <div class="bottom-container">
-                    <p>床旁登记人次</p>
+            <div class="bottom-container">
+                <p>床旁登记人次</p>
+            </div>
+        </div>
+    </ContentTemplate>
+</DashboardLayoutPanel>
+<DashboardLayoutPanel Column="8" Row="0" SizeX="2" SizeY="1">
+    <ContentTemplate>
+        <div class="root-container">
+            <div class="item-container expense">
+                <p>35</p>
+                <div class="auto-left">
+                    <span class="balance-icon e-icon"></span>
                 </div>
             </div>
-        </ContentTemplate>
-    </DashboardLayoutPanel>
+            <div class="bottom-container">
+                <p>床旁登记人次</p>
+            </div>
+        </div>
+    </ContentTemplate>
+</DashboardLayoutPanel>
 
 
-<DashboardLayoutPanel Column="0" Row="1" SizeX="7" SizeY="5">
+<DashboardLayoutPanel Column="0" Row="1" SizeX="7" SizeY="3">
     <HeaderTemplate>
         <span class="title">登记分时间数据</span>
     </HeaderTemplate>
@@ -109,7 +110,7 @@
                 <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
             </ChartPrimaryYAxis>
             <ChartSeriesCollection>
-                <ChartSeries ColumnWidth="0.5" DataSource="@hourly" XName="Hour" YName="WindowRegisterCount" Width="2" Name="窗口登记量" Type="ChartSeriesType.StackingColumn">
+                <ChartSeries ColumnWidth="0.5" DataSource="@gg" XName="Hour" YName="WindowRegisterCount" Width="2" Name="窗口登记量" Type="ChartSeriesType.StackingColumn">
                     <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
                     <ChartMarker>
                         <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
@@ -117,7 +118,7 @@
                         </ChartDataLabel>
                     </ChartMarker>
                 </ChartSeries>
-                <ChartSeries ColumnWidth="0.5" DataSource="@hourly" XName="Hour" YName="BedSideRegisterCount" Width="2" Name="床旁登记量" Type="ChartSeriesType.StackingColumn">
+                <ChartSeries ColumnWidth="0.5" DataSource="@gg" XName="Hour" YName="BedSideRegisterCount" Width="2" Name="床旁登记量" Type="ChartSeriesType.StackingColumn">
                     <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
                     <ChartMarker>
                         <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
@@ -125,7 +126,7 @@
                         </ChartDataLabel>
                     </ChartMarker>
                 </ChartSeries>
-                <ChartSeries ColumnWidth="0.5" DataSource="@hourly" XName="Hour" YName="WindowSettleCount" Width="2" Name="窗口结算量" Type="ChartSeriesType.StackingColumn">
+                <ChartSeries ColumnWidth="0.5" DataSource="@gg" XName="Hour" YName="WindowSettleCount" Width="2" Name="窗口结算量" Type="ChartSeriesType.StackingColumn">
                     <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
                     <ChartMarker>
                         <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
@@ -133,7 +134,7 @@
                         </ChartDataLabel>
                     </ChartMarker>
                 </ChartSeries>
-                <ChartSeries ColumnWidth="0.5" DataSource="@hourly" XName="Hour" YName="BedSideSettleCount" Width="2" Name="床旁结算量" Type="ChartSeriesType.StackingColumn">
+                <ChartSeries ColumnWidth="0.5" DataSource="@gg" XName="Hour" YName="BedSideSettleCount" Width="2" Name="床旁结算量" Type="ChartSeriesType.StackingColumn">
                     <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
                     <ChartMarker>
                         <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
@@ -147,42 +148,29 @@
         </SfChart>
     </ContentTemplate>
 </DashboardLayoutPanel>
-    <DashboardLayoutPanel Column="7" Row="1" SizeX="3" SizeY="5">
-        <HeaderTemplate>
-            <span class="title">登记科室数据</span>
-        </HeaderTemplate>
-        <ContentTemplate>
-            <SfChart Title="Sales Comparison" Width="@Width" Theme="@Theme">
-                    <ChartArea><ChartAreaBorder Width="0"></ChartAreaBorder></ChartArea>
-                    <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category">
-                        <ChartAxisMajorGridLines Width="0"></ChartAxisMajorGridLines>
-                        <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
-                    </ChartPrimaryXAxis>
-                <ChartPrimaryYAxis Title="Sales (In Percentage)" LabelFormat="{value}%" EdgeLabelPlacement="EdgeLabelPlacement.Shift">
-                    <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
-                    <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
-                </ChartPrimaryYAxis>
-                
-                    @* <ChartSeriesCollection> *@
-                    @*     <ChartSeries ColumnWidth="0.6" DataSource="@ChartPoints" XName="Month" YName="AppleSales" Width="2" Name="Apple" Type="ChartSeriesType.StackingBar"> *@
-                    @*         <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder> *@
-                    @*     </ChartSeries> *@
-                    @*     <ChartSeries ColumnWidth="0.6" DataSource="@ChartPoints" XName="Month" YName="OrangeSales" Width="2" Name="Orange" Type="ChartSeriesType.StackingBar"> *@
-                    @*         <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder> *@
-                    @*     </ChartSeries> *@
-                    @*     <ChartSeries ColumnWidth="0.6" DataSource="@ChartPoints" XName="Month" YName="Wastage" Width="2" Name="Wastage" Type="ChartSeriesType.StackingBar"> *@
-                    @*         <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder> *@
-                    @*     </ChartSeries> *@
-                    @* </ChartSeriesCollection> *@
-                    <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
-                    <ChartLegendSettings Visible="true" EnableHighlight="true"></ChartLegendSettings>
-                </SfChart>
-        </ContentTemplate>
-    </DashboardLayoutPanel>
-    
+<DashboardLayoutPanel Column="7" Row="1" SizeX="3" SizeY="3">
+    @* <HeaderTemplate> *@
+    @*     <span class="title">出院情况总览</span> *@
+    @* </HeaderTemplate> *@
+    <ContentTemplate>
+        <SfAccumulationChart Title="出院情况总览" EnableAnimation="true">
+                    <AccumulationChartTooltipSettings Enable="true"></AccumulationChartTooltipSettings>
+                    <AccumulationChartLegendSettings Visible="false"></AccumulationChartLegendSettings>
+                    <AccumulationChartSeriesCollection>
+                        <AccumulationChartSeries DataSource="@FunnelChartPoints" XName="InterviewProcess" YName="Candidates"
+                                                 Type="AccumulationType.Funnel" Explode="true" Width="80%" Height="80%" NeckWidth="40%" NeckHeight="20%">
+                            <AccumulationDataLabelSettings Visible="true" Name="DataLabelMappingName" Position="AccumulationLabelPosition.Inside">
+                                <AccumulationChartConnector Length="5%"></AccumulationChartConnector>
+                                <AccumulationChartDataLabelFont  FontWeight="600"></AccumulationChartDataLabelFont>
+                            </AccumulationDataLabelSettings>
+                        </AccumulationChartSeries>
+                    </AccumulationChartSeriesCollection>
+                </SfAccumulationChart>
+    </ContentTemplate>
+</DashboardLayoutPanel>
 
-    
-    <DashboardLayoutPanel Column="0" Row="9" SizeX="8" SizeY="2">
+
+<DashboardLayoutPanel Column="0" Row="9" SizeX="8" SizeY="2">
     <HeaderTemplate>
         <span class="title">Recent Transactions</span>
     </HeaderTemplate>
@@ -238,39 +226,36 @@
     // args.Text = args.Value.ToString("0,,.##M", CultureInfo.InvariantCulture);
         }
     }
-    
-     
 
     private List<HourlyData> hourly = new List<HourlyData>
     {
-        new HourlyData { Date = "2022-01-01", Hour = "07",DeptName = "心血管内科",WindowRegisterCount = 4, WindowSettleCount = 7, BedSideRegisterCount = 12, BedSideSettleCount = 40 },
-        new HourlyData { Date = "2022-01-01", Hour = "08", DeptName = "心血管内科",WindowRegisterCount = 5, WindowSettleCount = 4, BedSideRegisterCount = 42, BedSideSettleCount = 20 },
-        new HourlyData { Date = "2022-01-01", Hour = "09", DeptName = "心血管内科",WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "10",DeptName = "心血管内科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "11",DeptName = "心血管内科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
-        new HourlyData { Date = "2022-01-01", Hour = "12",DeptName = "心血管内科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
-        new HourlyData { Date = "2022-01-01", Hour = "13", DeptName = "心血管内科",WindowRegisterCount = 4, WindowSettleCount = 7, BedSideRegisterCount = 12, BedSideSettleCount = 40 },
-        new HourlyData { Date = "2022-01-01", Hour = "14",DeptName = "心血管内科", WindowRegisterCount = 5, WindowSettleCount = 4, BedSideRegisterCount = 42, BedSideSettleCount = 20 },
-        new HourlyData { Date = "2022-01-01", Hour = "15", DeptName = "心血管内科",WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "16",DeptName = "心血管内科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "17",DeptName = "心血管内科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
-        new HourlyData { Date = "2022-01-01", Hour = "18",DeptName = "心血管内科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
-        new HourlyData { Date = "2022-01-01", Hour = "07",DeptName = "泌尿外科",WindowRegisterCount = 4, WindowSettleCount = 7, BedSideRegisterCount = 12, BedSideSettleCount = 40 },
-        new HourlyData { Date = "2022-01-01", Hour = "08", DeptName = "泌尿外科",WindowRegisterCount = 5, WindowSettleCount = 4, BedSideRegisterCount = 42, BedSideSettleCount = 20 },
-        new HourlyData { Date = "2022-01-01", Hour = "09", DeptName = "泌尿外科",WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "10",DeptName = "泌尿外科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "11",DeptName = "泌尿外科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
-        new HourlyData { Date = "2022-01-01", Hour = "12",DeptName = "泌尿外科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
-        new HourlyData { Date = "2022-01-01", Hour = "13", DeptName = "泌尿外科",WindowRegisterCount = 4, WindowSettleCount = 7, BedSideRegisterCount = 12, BedSideSettleCount = 40 },
-        new HourlyData { Date = "2022-01-01", Hour = "14",DeptName = "泌尿外科", WindowRegisterCount = 5, WindowSettleCount = 4, BedSideRegisterCount = 42, BedSideSettleCount = 20 },
-        new HourlyData { Date = "2022-01-01", Hour = "15", DeptName = "泌尿外科",WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "16",DeptName = "泌尿外科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "17",DeptName = "泌尿外科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
-        new HourlyData { Date = "2022-01-01", Hour = "18",DeptName = "泌尿外科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
+        new HourlyData { Date = "2022-01-01", Hour = "07", DeptName = "心血管内科", WindowRegisterCount = 4, WindowSettleCount = 7, BedSideRegisterCount = 12, BedSideSettleCount = 40 },
+        new HourlyData { Date = "2022-01-01", Hour = "08", DeptName = "心血管内科", WindowRegisterCount = 5, WindowSettleCount = 4, BedSideRegisterCount = 42, BedSideSettleCount = 20 },
+        new HourlyData { Date = "2022-01-01", Hour = "09", DeptName = "心血管内科", WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
+        new HourlyData { Date = "2022-01-01", Hour = "10", DeptName = "心血管内科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
+        new HourlyData { Date = "2022-01-01", Hour = "11", DeptName = "心血管内科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
+        new HourlyData { Date = "2022-01-01", Hour = "12", DeptName = "心血管内科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
+        new HourlyData { Date = "2022-01-01", Hour = "13", DeptName = "心血管内科", WindowRegisterCount = 4, WindowSettleCount = 7, BedSideRegisterCount = 12, BedSideSettleCount = 40 },
+        new HourlyData { Date = "2022-01-01", Hour = "14", DeptName = "心血管内科", WindowRegisterCount = 5, WindowSettleCount = 4, BedSideRegisterCount = 42, BedSideSettleCount = 20 },
+        new HourlyData { Date = "2022-01-01", Hour = "15", DeptName = "心血管内科", WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
+        new HourlyData { Date = "2022-01-01", Hour = "16", DeptName = "心血管内科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
+        new HourlyData { Date = "2022-01-01", Hour = "17", DeptName = "心血管内科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
+        new HourlyData { Date = "2022-01-01", Hour = "18", DeptName = "心血管内科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
+        new HourlyData { Date = "2022-01-01", Hour = "07", DeptName = "泌尿外科", WindowRegisterCount = 4, WindowSettleCount = 7, BedSideRegisterCount = 12, BedSideSettleCount = 40 },
+        new HourlyData { Date = "2022-01-01", Hour = "08", DeptName = "泌尿外科", WindowRegisterCount = 5, WindowSettleCount = 4, BedSideRegisterCount = 42, BedSideSettleCount = 20 },
+        new HourlyData { Date = "2022-01-01", Hour = "09", DeptName = "泌尿外科", WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
+        new HourlyData { Date = "2022-01-01", Hour = "10", DeptName = "泌尿外科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
+        new HourlyData { Date = "2022-01-01", Hour = "11", DeptName = "泌尿外科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
+        new HourlyData { Date = "2022-01-01", Hour = "12", DeptName = "泌尿外科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
+        new HourlyData { Date = "2022-01-01", Hour = "13", DeptName = "泌尿外科", WindowRegisterCount = 4, WindowSettleCount = 7, BedSideRegisterCount = 12, BedSideSettleCount = 40 },
+        new HourlyData { Date = "2022-01-01", Hour = "14", DeptName = "泌尿外科", WindowRegisterCount = 5, WindowSettleCount = 4, BedSideRegisterCount = 42, BedSideSettleCount = 20 },
+        new HourlyData { Date = "2022-01-01", Hour = "15", DeptName = "泌尿外科", WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
+        new HourlyData { Date = "2022-01-01", Hour = "16", DeptName = "泌尿外科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
+        new HourlyData { Date = "2022-01-01", Hour = "17", DeptName = "泌尿外科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
+        new HourlyData { Date = "2022-01-01", Hour = "18", DeptName = "泌尿外科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
     };
-    
-    
-    
+
+
     private List<TransactionData> TransactData = new List<TransactionData>
     {
         new TransactionData { Category = "Food", Amount = 6, PaymentMode = "Debit Card", IconCss = "food", IsExpense = true, IsIncome = false, TransactoinId = "#131614678", Description = "Palmetto Cheese, Mint julep" },
@@ -280,26 +265,7 @@
         new TransactionData { Category = "Food", Amount = 10, PaymentMode = "Credit Card", IconCss = "food", IsExpense = true, IsIncome = false, TransactoinId = "#2744145880", Description = "Muffuletta sandwich, Mint julep" }
     };
 
-    private List<RenderingData> PieRenderingData = new List<RenderingData>
-    {
-        new RenderingData { X = "Mortgage / Rent", Text = "15.76%", Y = 6000 },
-        new RenderingData { X = "Food", Text = "12.79%", Y = 4866 },
-        new RenderingData { X = "Utilities", Text = "10.93%", Y = 4160 },
-        new RenderingData { X = "Bills", Text = "10.4%", Y = 3960 },
-        new RenderingData { X = "Shopping", Text = "8.87%", Y = 3375 },
-        new RenderingData { X = "Transportation", Text = "8.49%", Y = 3230 },
-        new RenderingData { X = "Insurance", Text = "7.59%", Y = 2890 },
-        new RenderingData { X = "Health Care", Text = "6.52%", Y = 2480 },
-        new RenderingData { X = "Clothing", Text = "5.92%", Y = 2255 },
-        new RenderingData { X = "Others", Text = "12.73%", Y = 4844 }
-    };
-
-
-    private string[] palettes = new string[]
-    {
-        "#61EFCD", "#CDDE1F", "#FEC200", "#CA765A", "#2485FA", "#F57D7D", "#C152D2",
-        "#8854D9", "#3D4EB8", "#00BCD7", "#4472c4", "#ed7d31", "#ffc000", "#70ad47", "#5b9bd5", "#c1c1c1", "#6f6fe2", "#e269ae", "#9e480e", "#997300"
-    };
+    private List<HourlyData2> gg = new List<HourlyData2>();
 
     protected override Task OnInitializedAsync()
     {
@@ -307,20 +273,23 @@
         int windowRegisterCount = hourly.Sum(x => x.WindowRegisterCount);
         int bedSideSettleCount = hourly.Sum(x => x.BedSideSettleCount);
         int windowSettleCount = hourly.Sum(x => x.WindowSettleCount);
-        
-        // doan nay la doan code em muon hien thi ra 1 list cac object co chung 1 property
+
+    // doan nay la doan code em muon hien thi ra 1 list cac object co chung 1 property
         int totalRegisterCount = hourly.Sum(x => x.WindowRegisterCount + x.BedSideRegisterCount);
         int totalSettleCount = hourly.Sum(x => x.WindowSettleCount + x.BedSideSettleCount);
-
-        var g = from a in hourly
-            group a by a.Hour into aa
-            select new
+    //
+        var g = (from a in hourly
+            group a by a.Hour
+            into aa
+            select new HourlyData2()
             {
-                WindowRegisterCount = aa.Sum(bb=>bb.WindowRegisterCount),
-                WindowSettleCount = aa.Sum(bb=>bb.WindowSettleCount),
-                BedSideRegisterCount = aa.Sum(bb=>bb.BedSideRegisterCount),
-                BedSideSettleCount = aa.Sum(bb=>bb.BedSideSettleCount),
-            };
+                Hour = aa.Key,
+                WindowRegisterCount = aa.Sum(bb => bb.WindowRegisterCount),
+                WindowSettleCount = aa.Sum(bb => bb.WindowSettleCount),
+                BedSideRegisterCount = aa.Sum(bb => bb.BedSideRegisterCount),
+                BedSideSettleCount = aa.Sum(bb => bb.BedSideSettleCount),
+            }).ToList();
+        gg = g;
         Console.WriteLine(g);
         return base.OnInitializedAsync();
     }
@@ -329,48 +298,49 @@
     {
     // Theme = ThemeHelper.GetCurrentTheme(NavigationManager.Uri);
         
-        
         int bedSideRegisterCount = hourly.Sum(x => x.BedSideRegisterCount);
         int windowRegisterCount = hourly.Sum(x => x.WindowRegisterCount);
         int bedSideSettleCount = hourly.Sum(x => x.BedSideSettleCount);
         int windowSettleCount = hourly.Sum(x => x.WindowSettleCount);
-        
+
         int totalRegisterCount = hourly.Sum(x => x.WindowRegisterCount + x.BedSideRegisterCount);
         int totalSettleCount = hourly.Sum(x => x.WindowSettleCount + x.BedSideSettleCount);
 
         var g = from a in hourly
-            group a by a.Hour into aa
+            group a by a.Hour
+            into aa
             select new
             {
-                WindowRegisterCount = aa.Sum(bb=>bb.WindowRegisterCount),
-                WindowSettleCount = aa.Sum(bb=>bb.WindowSettleCount),
-                BedSideRegisterCount = aa.Sum(bb=>bb.BedSideRegisterCount),
-                BedSideSettleCount = aa.Sum(bb=>bb.BedSideSettleCount),
+                WindowRegisterCount = aa.Sum(bb => bb.WindowRegisterCount),
+                WindowSettleCount = aa.Sum(bb => bb.WindowSettleCount),
+                BedSideRegisterCount = aa.Sum(bb => bb.BedSideRegisterCount),
+                BedSideSettleCount = aa.Sum(bb => bb.BedSideSettleCount),
             };
         Console.WriteLine(g);
     }
 
-    private class RenderingData
+    public class FunnelData
     {
-        public string X { get; set; }
-        public int Y { get; set; }
-        public string Text { get; set; }
-        public string Fill { get; set; }
+        public string InterviewProcess { get; set; }
+        public double Candidates { get; set; }
+        public string DataLabelMappingName{ get; set; }
     }
-
-    private class IncomeExpense
+    public List<FunnelData> FunnelChartPoints { get; set; } = new List<FunnelData>
     {
-        public DateTime Period { get; set; }
-        public int Income { get; set; }
-        public int Expense { get; set; }
-    }
+        new FunnelData { InterviewProcess = "Hired", Candidates = 99, DataLabelMappingName="Hired: 55"},
+        new FunnelData { InterviewProcess = "Personal Interview", Candidates = 58, DataLabelMappingName="Personal Interview: 58"},
+        new FunnelData { InterviewProcess = "Telephonic Interview", Candidates = 85, DataLabelMappingName="Telephonic Interview: 85"},
+        new FunnelData { InterviewProcess = "Screening", Candidates = 105, DataLabelMappingName="Screening: 105"},
+        new FunnelData { InterviewProcess = "Initial Validation", Candidates = 145, DataLabelMappingName="Initial Validation: 145"},
+        new FunnelData { InterviewProcess = "Candidates Applied", Candidates = 10, DataLabelMappingName="Candidates Applied: 250"},
+    };
 
     private class HourlyData
     {
         public string Date { get; set; }
         public string Hour { get; set; }
         public string DeptName { get; set; }
-        
+
         public int WindowSettleCount { get; set; }
         public int BedSideSettleCount { get; set; }
 
@@ -378,15 +348,16 @@
         public int BedSideRegisterCount { get; set; }
     }
     
-    private class DeptData
+    private class HourlyData2
     {
-        
-        public string BedSideRegisterCount { get; set; }
-        public string BedSideSettleCount { get; set; }
-        public string WindowRegisterCount { get; set; }
-        public string WindowSettleCount { get; set; }
-    }
+        public string Hour { get; set; }
 
+        public int WindowSettleCount { get; set; }
+        public int BedSideSettleCount { get; set; }
+
+        public int WindowRegisterCount { get; set; }
+        public int BedSideRegisterCount { get; set; }
+    }
 
     private class TransactionData
     {
@@ -402,8 +373,7 @@
 }
 
 
-<style>
-
+<style> 
 	.e-dashboardlayout {
 		padding: 10px;
 	}
@@ -530,7 +500,7 @@
 	}
 
 	.expense:after {
-		content: "\e899";
+		content: "\e901";
 		font-size: 24px;
 		font-family: "e-sb-icons";
 	}
@@ -550,7 +520,8 @@
     		content: "\e903";
     		font-size: 24px;
     		font-family: "e-sb-icons";
-    	}
+    }
+    	
 
 	.e-headercelldiv span.e-headertext {
 		font-size: 14px;

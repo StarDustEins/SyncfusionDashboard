@@ -1,3 +1,32 @@
 ﻿<Properties StartupConfiguration="{26777275-3E0E-4101-A165-6208E6B2A551}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SyncfusionBlazorApp PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/Pages/Index.razor" relfile="Pages/Index.razor" line="325" column="1" />
+      <Breakpoint file="/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/Pages/Index.razor" relfile="Pages/Index.razor" line="350" column="1" />
+      <Breakpoint file="/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/Pages/Index.razor" relfile="Pages/Index.razor" line="324" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Pages/Index.razor" Line="314" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SyncfusionBlazorApp" expanded="True">
+            <Node name="SyncfusionBlazorApp" expanded="True">
+              <Node name="Pages" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
