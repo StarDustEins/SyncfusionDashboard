@@ -29,6 +29,7 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-jOmoWSfsdQexH\/6QCA56gR1RMEqeix2iDDUBWbpAOQI=",
       "Microsoft.JSInterop.dll": "sha256-OBL83ANjfum7vDXWY9JzTSOLSr5DTTajTez0w\/70pAc=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-Eh7KdjwbmVGTRNSYsrftwhWuXuPvYdIGlsDUtyEZRNg=",
+      "Newtonsoft.Json.dll": "sha256-cs8pHUurDt0IqbB8YXPh560au3q3J\/1wRL9jBddRVmE=",
       "Syncfusion.Blazor.Buttons.dll": "sha256-Gk9oMOZXZqM5mfzwhdqN4BKe1l81CDfIOAkf7yl+q6o=",
       "Syncfusion.Blazor.Calendars.dll": "sha256-i4fGASydGlCUXhZlG9LKlMZog7cdKuz+WGfgeVYU+WA=",
       "Syncfusion.Blazor.Charts.dll": "sha256-bf7gal\/YuNqhkxfqC2GjdxL0b+UVKcrbGeWrVKoFUJc=",
@@ -215,13 +216,13 @@
       "mscorlib.dll": "sha256-MnMyZHtcymf0sLxXeFBbQZVsdNdxT0GXJaa9t3ZdSek=",
       "netstandard.dll": "sha256-+SGdnDhVMiZ9hq0EsYwJ+mcK0odf3bAtXnSKLorGDCs=",
       "System.Private.CoreLib.dll": "sha256-mqfalNg3wC8XHlyA+j5ioNcnc0kt4prNudKdyJoaYaU=",
-      "SyncfusionBlazorApp.dll": "sha256-FSpKY0MHFzUMwByF4RYDPa0MzON7BizjL9PetM9ErDg="
+      "SyncfusionBlazorApp.dll": "sha256-\/s7kMeTN0dAIUXsZcffxiw4SpdDAvJuLn7mFWVq633M="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "SyncfusionBlazorApp.pdb": "sha256-DIuKOL0eISWpX4ykxveGcjlm5lQ8atC9krx4mbF6ZkQ="
+      "SyncfusionBlazorApp.pdb": "sha256-MOAmvOjlYtkHZJnDHtMr2LNltu5RWMXtg0tWv2obByc="
     },
     "runtime": {
       "dotnet.6.0.9.9nxfpacqyh.js": "sha256-Azk5sbYFVo84h8NpIst9roIPGLH2y8ewQ9SY\/sUHvgs=",

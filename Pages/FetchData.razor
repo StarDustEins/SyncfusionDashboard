@@ -1,7 +1,6 @@
 @page "/fetchdata"
 @using static SyncfusionBlazorApp.Pages.Index
 @using Newtonsoft.Json
-@inject HttpClient Http
 
 <PageTitle>医保登记与结算列表</PageTitle>
 
@@ -28,7 +27,7 @@ else
 }
 
 @code {
-    private SettleOrRegisterDTO[]? showDataArray;
+    private SyncfusionBlazorApp.Pages.Index.SettleOrRegisterDTO[]? showDataArray;
     public static List<SettleOrRegisterDTO> listRtn = new List<SettleOrRegisterDTO>();
 
     protected override Task OnInitializedAsync()
