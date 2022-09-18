@@ -7,225 +7,212 @@
 <PageTitle>Dashboard</PageTitle>
 
 <div class="control-section">
-<SfDashboardLayout @ref="dashboardObject" Columns="10" CellSpacing="@(new double[] { 15, 15 })" CellAspectRatio="0.9">
-<DashboardLayoutPanels>
-<DashboardLayoutPanel Column="0" Row="0" SizeX="2" SizeY="1">
-    <ContentTemplate>
-        <div class="root-container">
-            <div class="item-container bed-side-settle">
-                <p>@(Math.Round(100.0 * 30 / 90, 2))%</p>
-                <div class="auto-left">
-                    <span class="income-icon e-icon"></span>
-                </div>
-            </div>
-            <div class="bottom-container">
-                <p>床旁结算率</p>
-            </div>
-        </div>
-    </ContentTemplate>
-</DashboardLayoutPanel>
-<DashboardLayoutPanel Column="2" Row="0" SizeX="2" SizeY="1">
-    <ContentTemplate>
-        <div class="root-container">
-            <div class="item-container bed-side-register">
-                <p>21</p>
-                <div class="auto-left">
-                    <span class="expense-icon e-icon"></span>
-                </div>
-            </div>
-            <div class="bottom-container">
-                <p>床旁结算人次</p>
-            </div>
-        </div>
-    </ContentTemplate>
-</DashboardLayoutPanel>
-<DashboardLayoutPanel Column="4" Row="0" SizeX="2" SizeY="1">
-    <ContentTemplate>
-        <div class="root-container">
-            <div class="item-container window-settle">
-                <p>@(Math.Round(100.0 * 30 / 90, 2))%</p>
-                <div class="auto-left">
-                    <span class="balance-icon e-icon"></span>
-                </div>
-            </div>
-            <div class="bottom-container">
-                <p>床旁登记率</p>
-            </div>
-        </div>
-    </ContentTemplate>
-</DashboardLayoutPanel>
-<DashboardLayoutPanel Column="6" Row="0" SizeX="2" SizeY="1">
-    <ContentTemplate>
-        <div class="root-container">
-            <div class="item-container window-register">
-                <p>35</p>
-                <div class="auto-left">
-                    <span class="transaction-icon e-icon"></span>
-                </div>
-            </div>
-            <div class="bottom-container">
-                <p>床旁登记人次</p>
-            </div>
-        </div>
-    </ContentTemplate>
-</DashboardLayoutPanel>
-<DashboardLayoutPanel Column="8" Row="0" SizeX="2" SizeY="1">
-    <ContentTemplate>
-        <div class="root-container">
-            <div class="item-container expense">
-                <p>35</p>
-                <div class="auto-left">
-                    <span class="balance-icon e-icon"></span>
-                </div>
-            </div>
-            <div class="bottom-container">
-                <p>床旁登记人次</p>
-            </div>
-        </div>
-    </ContentTemplate>
-</DashboardLayoutPanel>
-
-
-<DashboardLayoutPanel Column="0" Row="1" SizeX="7" SizeY="3">
-    <HeaderTemplate>
-        <span class="title">登记分时间数据</span>
-    </HeaderTemplate>
-    <ContentTemplate>
-        <SfChart Title="分时业务量" Width="@Width" Theme="@Theme">
-            <ChartArea>
-                <ChartAreaBorder Width="0"></ChartAreaBorder>
-            </ChartArea>
-            <ChartEvents OnAxisLabelRender="axisLabel"></ChartEvents>
-            <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category" Interval="1" LabelIntersectAction="LabelIntersectAction.Rotate45">
-                <ChartAxisMajorGridLines Width="0"></ChartAxisMajorGridLines>
-                <ChartAxisMinorGridLines Width="0"></ChartAxisMinorGridLines>
-                <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
-                <ChartAxisMinorTickLines Width="0"></ChartAxisMinorTickLines>
-                <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
-            </ChartPrimaryXAxis>
-            <ChartPrimaryYAxis Title="业务总量">
-                <ChartAxisMinorGridLines Width="1"></ChartAxisMinorGridLines>
-                <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
-                <ChartAxisMinorTickLines Width="0"></ChartAxisMinorTickLines>
-                <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
-            </ChartPrimaryYAxis>
-            <ChartSeriesCollection>
-                <ChartSeries ColumnWidth="0.5" DataSource="@gg" XName="Hour" YName="WindowRegisterCount" Width="2" Name="窗口登记量" Type="ChartSeriesType.StackingColumn">
-                    <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
-                    <ChartMarker>
-                        <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
-                            <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
-                        </ChartDataLabel>
-                    </ChartMarker>
-                </ChartSeries>
-                <ChartSeries ColumnWidth="0.5" DataSource="@gg" XName="Hour" YName="BedSideRegisterCount" Width="2" Name="床旁登记量" Type="ChartSeriesType.StackingColumn">
-                    <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
-                    <ChartMarker>
-                        <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
-                            <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
-                        </ChartDataLabel>
-                    </ChartMarker>
-                </ChartSeries>
-                <ChartSeries ColumnWidth="0.5" DataSource="@gg" XName="Hour" YName="WindowSettleCount" Width="2" Name="窗口结算量" Type="ChartSeriesType.StackingColumn">
-                    <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
-                    <ChartMarker>
-                        <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
-                            <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
-                        </ChartDataLabel>
-                    </ChartMarker>
-                </ChartSeries>
-                <ChartSeries ColumnWidth="0.5" DataSource="@gg" XName="Hour" YName="BedSideSettleCount" Width="2" Name="床旁结算量" Type="ChartSeriesType.StackingColumn">
-                    <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
-                    <ChartMarker>
-                        <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
-                            <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
-                        </ChartDataLabel>
-                    </ChartMarker>
-                </ChartSeries>
-            </ChartSeriesCollection>
-            <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
-            <ChartLegendSettings Visible="true" EnableHighlight="true"></ChartLegendSettings>
-        </SfChart>
-    </ContentTemplate>
-</DashboardLayoutPanel>
-<DashboardLayoutPanel Column="7" Row="1" SizeX="3" SizeY="3">
-    @* <HeaderTemplate> *@
-    @*     <span class="title">出院情况总览</span> *@
-    @* </HeaderTemplate> *@
-    <ContentTemplate>
-        <SfAccumulationChart Title="出院情况总览" EnableAnimation="true">
-                    <AccumulationChartTooltipSettings Enable="true"></AccumulationChartTooltipSettings>
-                    <AccumulationChartLegendSettings Visible="false"></AccumulationChartLegendSettings>
-                    <AccumulationChartSeriesCollection>
-                        <AccumulationChartSeries DataSource="@FunnelChartPoints" XName="InterviewProcess" YName="Candidates"
-                                                 Type="AccumulationType.Funnel" Explode="true" Width="80%" Height="80%" NeckWidth="40%" NeckHeight="20%">
-                            <AccumulationDataLabelSettings Visible="true" Name="DataLabelMappingName" Position="AccumulationLabelPosition.Inside">
-                                <AccumulationChartConnector Length="5%"></AccumulationChartConnector>
-                                <AccumulationChartDataLabelFont  FontWeight="600"></AccumulationChartDataLabelFont>
-                            </AccumulationDataLabelSettings>
-                        </AccumulationChartSeries>
-                    </AccumulationChartSeriesCollection>
-                </SfAccumulationChart>
-    </ContentTemplate>
-</DashboardLayoutPanel>
-
-
-<DashboardLayoutPanel Column="0" Row="9" SizeX="8" SizeY="2">
-    <HeaderTemplate>
-        <span class="title">Recent Transactions</span>
-    </HeaderTemplate>
-    <ContentTemplate>
-        <SfGrid TValue="TransactionData" DataSource="@TransactData" Width="100%" Height="100%" AllowSorting="true" EnableHover="false" AllowPaging="false">
-            <GridColumns>
-                <GridColumn Field="@nameof(TransactionData.TransactoinId)" HeaderText="Transaction ID" Width="120" TextAlign="@TextAlign.Center"></GridColumn>
-                <GridColumn Field="@nameof(TransactionData.Category)" HeaderText="Category" Width="120">
-                    <Template>
-                        @{
-                            var expense = (context as TransactionData);
-                            <div class="normalRes">
-                                <div class="category-icon @expense.IconCss"></div>
-                                <div class='category-text'>@expense.Category</div>
+    <SfDashboardLayout @ref="dashboardObject" Columns="10" CellSpacing="@(new double[] { 15, 15 })" CellAspectRatio="0.9">
+        <DashboardLayoutPanels>
+            <DashboardLayoutPanel Column="0" Row="0" SizeX="2" SizeY="1">
+                <ContentTemplate>
+                    <div class="root-container">
+                        <div class="item-container bed-side-settle">
+                            <p>@(Math.Round(100.0 * 30 / 90, 2))%</p>
+                            <div class="auto-left">
+                                <span class="income-icon e-icon"></span>
                             </div>
-                        }
-                    </Template>
-                </GridColumn>
-                <GridColumn Field="@nameof(TransactionData.PaymentMode)" HeaderText="Payment Mode" Width="160" TextAlign="@TextAlign.Center"></GridColumn>
-                <GridColumn Field="@nameof(TransactionData.Description)" HeaderText="Description" Width="160" TextAlign="@TextAlign.Center"></GridColumn>
-                <GridColumn Field="@nameof(TransactionData.Amount)" HeaderText="Amount" Width="120" TextAlign="@TextAlign.Center">
-                    <Template>
-                        @{
-                            var expense = (context as TransactionData);
-                            <div class="normalRes">
-                                <div class='amt-payment @(expense.IsExpense ? "expense-payment" : "income-payment")'>
-                                    <span>$</span><span>@expense.Amount</span>
-                                </div>
+                        </div>
+                        <div class="bottom-container">
+                            <p>床旁结算率</p>
+                        </div>
+                    </div>
+                </ContentTemplate>
+            </DashboardLayoutPanel>
+            <DashboardLayoutPanel Column="2" Row="0" SizeX="2" SizeY="1">
+                <ContentTemplate>
+                    <div class="root-container">
+                        <div class="item-container bed-side-register">
+                            <p>21</p>
+                            <div class="auto-left">
+                                <span class="expense-icon e-icon"></span>
                             </div>
-                        }
-                    </Template>
-                </GridColumn>
-            </GridColumns>
-        </SfGrid>
-    </ContentTemplate>
-</DashboardLayoutPanel>
-</DashboardLayoutPanels>
-</SfDashboardLayout>
+                        </div>
+                        <div class="bottom-container">
+                            <p>床旁结算人次</p>
+                        </div>
+                    </div>
+                </ContentTemplate>
+            </DashboardLayoutPanel>
+            <DashboardLayoutPanel Column="4" Row="0" SizeX="2" SizeY="1">
+                <ContentTemplate>
+                    <div class="root-container">
+                        <div class="item-container window-settle">
+                            <p>@(Math.Round(100.0 * 30 / 90, 2))%</p>
+                            <div class="auto-left">
+                                <span class="balance-icon e-icon"></span>
+                            </div>
+                        </div>
+                        <div class="bottom-container">
+                            <p>床旁登记率</p>
+                        </div>
+                    </div>
+                </ContentTemplate>
+            </DashboardLayoutPanel>
+            <DashboardLayoutPanel Column="6" Row="0" SizeX="2" SizeY="1">
+                <ContentTemplate>
+                    <div class="root-container">
+                        <div class="item-container window-register">
+                            <p>35</p>
+                            <div class="auto-left">
+                                <span class="transaction-icon e-icon"></span>
+                            </div>
+                        </div>
+                        <div class="bottom-container">
+                            <p>床旁登记人次</p>
+                        </div>
+                    </div>
+                </ContentTemplate>
+            </DashboardLayoutPanel>
+            <DashboardLayoutPanel Column="8" Row="0" SizeX="2" SizeY="1">
+                <ContentTemplate>
+                    <div class="root-container">
+                        <div class="item-container expense">
+                            <p>35</p>
+                            <div class="auto-left">
+                                <span class="balance-icon e-icon"></span>
+                            </div>
+                        </div>
+                        <div class="bottom-container">
+                            <p>床旁登记人次</p>
+                        </div>
+                    </div>
+                </ContentTemplate>
+            </DashboardLayoutPanel>
+
+
+            <DashboardLayoutPanel Column="0" Row="1" SizeX="8" SizeY="3">
+                <HeaderTemplate>
+                    <span class="title">登记分时间数据</span>
+                </HeaderTemplate>
+                <ContentTemplate>
+                    <SfChart Width="90%">
+                        <ChartArea>
+                            <ChartAreaBorder Width="0"></ChartAreaBorder>
+                        </ChartArea>
+                        @* <ChartEvents OnAxisLabelRender="axisLabel"></ChartEvents> *@
+                        <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category" Interval="1" LabelIntersectAction="LabelIntersectAction.Rotate45">
+                            <ChartAxisMajorGridLines Width="0"></ChartAxisMajorGridLines>
+                            <ChartAxisMinorGridLines Width="0"></ChartAxisMinorGridLines>
+                            <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
+                            <ChartAxisMinorTickLines Width="0"></ChartAxisMinorTickLines>
+                            <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
+                        </ChartPrimaryXAxis>
+                        <ChartPrimaryYAxis Title="业务总量" RangePadding="ChartRangePadding.Round">
+                            <ChartAxisMinorGridLines Width="1"></ChartAxisMinorGridLines>
+                            <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
+                            <ChartAxisMinorTickLines Width="0"></ChartAxisMinorTickLines>
+                            <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
+                        </ChartPrimaryYAxis>
+                        <ChartSeriesCollection>
+                            <ChartSeries ColumnWidth="0.5" DataSource="@gg" XName="Hour" YName="WindowRegisterCount" Width="2" Name="窗口登记量" Type="ChartSeriesType.StackingColumn">
+                                <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
+                                <ChartMarker>
+                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
+                                        <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
+                                    </ChartDataLabel>
+                                </ChartMarker>
+                            </ChartSeries>
+                            <ChartSeries ColumnWidth="0.5" DataSource="@gg" XName="Hour" YName="BedSideRegisterCount" Width="2" Name="床旁登记量" Type="ChartSeriesType.StackingColumn">
+                                <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
+                                <ChartMarker>
+                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
+                                        <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
+                                    </ChartDataLabel>
+                                </ChartMarker>
+                            </ChartSeries>
+                            <ChartSeries ColumnWidth="0.5" DataSource="@gg" XName="Hour" YName="WindowSettleCount" Width="2" Name="窗口结算量" Type="ChartSeriesType.StackingColumn">
+                                <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
+                                <ChartMarker>
+                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
+                                        <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
+                                    </ChartDataLabel>
+                                </ChartMarker>
+                            </ChartSeries>
+                            <ChartSeries ColumnWidth="0.5" DataSource="@gg" XName="Hour" YName="BedSideSettleCount" Width="2" Name="床旁结算量" Type="ChartSeriesType.StackingColumn">
+                                <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
+                                <ChartMarker>
+                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
+                                        <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
+                                    </ChartDataLabel>
+                                </ChartMarker>
+                            </ChartSeries>
+                        </ChartSeriesCollection>
+                        <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
+                        <ChartLegendSettings Visible="true" EnableHighlight="true"></ChartLegendSettings>
+                    </SfChart>
+                </ContentTemplate>
+            </DashboardLayoutPanel>
+            
+            <DashboardLayoutPanel Column="8" Row="1" SizeX="2" SizeY="5">
+                <HeaderTemplate>
+                    <span class="title">科室开展情况</span>
+                </HeaderTemplate>
+                <ContentTemplate>
+                    <SfChart  Width="90%">
+                        <ChartArea>
+                            <ChartAreaBorder Width="0"></ChartAreaBorder>
+                        </ChartArea>
+                        <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category">
+                            <ChartAxisMajorGridLines Width="0"></ChartAxisMajorGridLines>
+                            <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
+                        </ChartPrimaryXAxis>
+                        <ChartPrimaryYAxis  LabelFormat="{value}%" EdgeLabelPlacement="EdgeLabelPlacement.Shift" RangePadding="ChartRangePadding.None">
+                            <ChartAxisMajorTickLines Width="1"></ChartAxisMajorTickLines>
+                            <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
+                        </ChartPrimaryYAxis>
+                        <ChartSeriesCollection>
+                            <ChartSeries ColumnWidth="0.6" DataSource="@DeptUsage" XName="DeptName" YName="BedSideRegisterRate" Width="2" Name="床旁登记率" Type="ChartSeriesType.Bar">
+                                <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
+                                <ChartMarker>
+                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" >
+                                        <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
+                                    </ChartDataLabel>
+                                </ChartMarker>
+                            </ChartSeries>
+                            <ChartSeries ColumnWidth="0.6" DataSource="@DeptUsage" XName="DeptName" YName="BedSideSettleRate" Width="2" Name="床旁结算率" Type="ChartSeriesType.Bar">
+                                <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
+                            </ChartSeries>
+                        </ChartSeriesCollection>
+                        <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
+                        <ChartLegendSettings Visible="true" EnableHighlight="true"></ChartLegendSettings>
+                    </SfChart>
+                </ContentTemplate>
+            </DashboardLayoutPanel>
+            
+            <DashboardLayoutPanel Column="0" Row="9" SizeX="5" SizeY="2">
+                <HeaderTemplate>
+                    <span class="title">出院情况总览</span>
+                </HeaderTemplate>
+                <ContentTemplate>
+                    <SfAccumulationChart EnableAnimation="true">
+                        <AccumulationChartTooltipSettings Enable="true"></AccumulationChartTooltipSettings>
+                        <AccumulationChartLegendSettings Visible="false"></AccumulationChartLegendSettings>
+                        <AccumulationChartSeriesCollection>
+                            <AccumulationChartSeries DataSource="@FunnelChartPoints" XName="InterviewProcess" YName="Candidates"
+                                                     Type="AccumulationType.Funnel" Explode="true" Width="70%" Height="100%" NeckWidth="20%" NeckHeight="30%">
+                                <AccumulationDataLabelSettings Visible="true" Name="DataLabelMappingName" Position="AccumulationLabelPosition.Inside">
+                                    <AccumulationChartConnector Length="5%"></AccumulationChartConnector>
+                                    <AccumulationChartDataLabelFont FontWeight="600"></AccumulationChartDataLabelFont>
+                                </AccumulationDataLabelSettings>
+                            </AccumulationChartSeries>
+                        </AccumulationChartSeriesCollection>
+                    </SfAccumulationChart>
+                </ContentTemplate>
+            </DashboardLayoutPanel>
+        </DashboardLayoutPanels>
+    </SfDashboardLayout>
 </div>
 
 @code {
     // dashboard 参数
     SfDashboardLayout dashboardObject;
     private Theme Theme { get; set; }
-
-    // 柱状图参数
-    public string Width { get; set; } = "90%";
-
-    void axisLabel(AxisLabelRenderEventArgs args)
-    {
-        if (args.Value > 999999 || args.Value < -999999)
-        {
-    // args.Text = args.Value.ToString("0,,.##M", CultureInfo.InvariantCulture);
-        }
-    }
 
     private List<HourlyData> hourly = new List<HourlyData>
     {
@@ -252,18 +239,32 @@
         new HourlyData { Date = "2022-01-01", Hour = "15", DeptName = "泌尿外科", WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
         new HourlyData { Date = "2022-01-01", Hour = "16", DeptName = "泌尿外科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
         new HourlyData { Date = "2022-01-01", Hour = "17", DeptName = "泌尿外科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
-        new HourlyData { Date = "2022-01-01", Hour = "18", DeptName = "泌尿外科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
+        new HourlyData { Date = "2022-01-01", Hour = "18", DeptName = "泌尿外科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 }
     };
 
-
-    private List<TransactionData> TransactData = new List<TransactionData>
+    
+    public class DeptUsageData
     {
-        new TransactionData { Category = "Food", Amount = 6, PaymentMode = "Debit Card", IconCss = "food", IsExpense = true, IsIncome = false, TransactoinId = "#131614678", Description = "Palmetto Cheese, Mint julep" },
-        new TransactionData { Category = "Transportation", Amount = 7, PaymentMode = "Debit Card", IconCss = "travel", IsExpense = true, IsIncome = false, TransactoinId = "#131416876", Description = "Other vehicle expenses" },
-        new TransactionData { Category = "Housing", Amount = 20, PaymentMode = "Credit Card", IconCss = "housing", IsExpense = true, IsIncome = false, TransactoinId = "#1711148579", Description = "Laundry and cleaning supplies" },
-        new TransactionData { Category = "Extra Income", Amount = 110, PaymentMode = "Cash", IconCss = "extra-income", IsExpense = false, IsIncome = true, TransactoinId = "#1922419785", Description = "Income from Sale" },
-        new TransactionData { Category = "Food", Amount = 10, PaymentMode = "Credit Card", IconCss = "food", IsExpense = true, IsIncome = false, TransactoinId = "#2744145880", Description = "Muffuletta sandwich, Mint julep" }
+        public string DeptName { get; set; }
+        public float BedSideRegisterRate { get; set; }
+        public float BedSideSettleRate { get; set; }
+    }
+    public List<DeptUsageData> DeptUsage { get; set; } = new List<DeptUsageData>
+    {
+        new DeptUsageData(){ DeptName = "心血管内科", BedSideRegisterRate = 11.54f, BedSideSettleRate = 10.23f },
+        new DeptUsageData(){ DeptName = "消化内科", BedSideRegisterRate = 21.54f, BedSideSettleRate = 3.23f },
+        new DeptUsageData(){ DeptName = "泌尿外科", BedSideRegisterRate = 1.54f, BedSideSettleRate = 5.23f },
+        new DeptUsageData(){ DeptName = "急诊科", BedSideRegisterRate = 5.54f, BedSideSettleRate = 6.23f },
+        new DeptUsageData(){ DeptName = "胃肠科", BedSideRegisterRate = 6.54f, BedSideSettleRate = 11.23f },
+        new DeptUsageData(){ DeptName = "普外科", BedSideRegisterRate = 7.54f, BedSideSettleRate = 12.23f },
+        new DeptUsageData(){ DeptName = "耳鼻喉科", BedSideRegisterRate = 21.54f, BedSideSettleRate = 29.23f },
+        new DeptUsageData(){ DeptName = "眼科", BedSideRegisterRate = 0.54f, BedSideSettleRate = 6.23f },
+        new DeptUsageData(){ DeptName = "口腔科", BedSideRegisterRate = 31.54f, BedSideSettleRate = 3.23f },
+        
     };
+
+
+   
 
     private List<HourlyData2> gg = new List<HourlyData2>();
 
@@ -273,10 +274,10 @@
         int windowRegisterCount = hourly.Sum(x => x.WindowRegisterCount);
         int bedSideSettleCount = hourly.Sum(x => x.BedSideSettleCount);
         int windowSettleCount = hourly.Sum(x => x.WindowSettleCount);
-        
+
         int totalRegisterCount = hourly.Sum(x => x.WindowRegisterCount + x.BedSideRegisterCount);
         int totalSettleCount = hourly.Sum(x => x.WindowSettleCount + x.BedSideSettleCount);
-    
+
         var g = (from a in hourly
             group a by a.Hour
             into aa
@@ -296,7 +297,7 @@
     protected override void OnInitialized()
     {
     // Theme = ThemeHelper.GetCurrentTheme(NavigationManager.Uri);
-        
+
         int bedSideRegisterCount = hourly.Sum(x => x.BedSideRegisterCount);
         int windowRegisterCount = hourly.Sum(x => x.WindowRegisterCount);
         int bedSideSettleCount = hourly.Sum(x => x.BedSideSettleCount);
@@ -322,16 +323,17 @@
     {
         public string InterviewProcess { get; set; }
         public double Candidates { get; set; }
-        public string DataLabelMappingName{ get; set; }
+        public string DataLabelMappingName { get; set; }
     }
+
     public List<FunnelData> FunnelChartPoints { get; set; } = new List<FunnelData>
     {
-        new FunnelData { InterviewProcess = "Hired", Candidates = 99, DataLabelMappingName="Hired: 55"},
-        new FunnelData { InterviewProcess = "Personal Interview", Candidates = 58, DataLabelMappingName="Personal Interview: 58"},
-        new FunnelData { InterviewProcess = "Telephonic Interview", Candidates = 85, DataLabelMappingName="Telephonic Interview: 85"},
-        new FunnelData { InterviewProcess = "Screening", Candidates = 105, DataLabelMappingName="Screening: 105"},
-        new FunnelData { InterviewProcess = "Initial Validation", Candidates = 145, DataLabelMappingName="Initial Validation: 145"},
-        new FunnelData { InterviewProcess = "Candidates Applied", Candidates = 10, DataLabelMappingName="Candidates Applied: 250"},
+        new FunnelData { InterviewProcess = "Hired", Candidates = 99, DataLabelMappingName = "Hired: 55" },
+        new FunnelData { InterviewProcess = "Personal Interview", Candidates = 58, DataLabelMappingName = "Personal Interview: 58" },
+        new FunnelData { InterviewProcess = "Telephonic Interview", Candidates = 85, DataLabelMappingName = "Telephonic Interview: 85" },
+        new FunnelData { InterviewProcess = "Screening", Candidates = 105, DataLabelMappingName = "Screening: 105" },
+        new FunnelData { InterviewProcess = "Initial Validation", Candidates = 145, DataLabelMappingName = "Initial Validation: 145" },
+        new FunnelData { InterviewProcess = "Candidates Applied", Candidates = 10, DataLabelMappingName = "Candidates Applied: 250" },
     };
 
     private class HourlyData
@@ -346,7 +348,7 @@
         public int WindowRegisterCount { get; set; }
         public int BedSideRegisterCount { get; set; }
     }
-    
+
     private class HourlyData2
     {
         public string Hour { get; set; }
@@ -369,6 +371,7 @@
         public bool IsExpense { get; set; }
         public int Amount { get; set; }
     }
+
 }
 
 
