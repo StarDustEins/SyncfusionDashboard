@@ -1,44 +1,46 @@
 @page "/fetchdata"
+@using static SyncfusionBlazorApp.Pages.Index
+@using Newtonsoft.Json
 @inject HttpClient Http
 
-<PageTitle>Weather forecast</PageTitle>
+<PageTitle>医保登记与结算列表</PageTitle>
 
-<h1>Weather forecast</h1>
+<h1>医保登记与结算列表</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
+@*<p>This component demonstrates fetching data from the server.</p>*@
 
-@if (forecasts == null)
+@if (showDataArray == null)
 {
-    <p><em>Loading...</em></p>
+    <p><em>数据加载中...</em></p>
 }
 else
 {
-    <SfGrid AllowFiltering="true" AllowSorting="true" DataSource="@forecasts">
+    <SfGrid AllowFiltering="false" AllowSorting="true" DataSource="@showDataArray">
         <GridColumns>
-            <GridColumn Field=@nameof(WeatherForecast.Date) Format="yMd" HeaderText="Date"></GridColumn>
-            <GridColumn Field=@nameof(WeatherForecast.TemperatureC) HeaderText="Temp. (C)"></GridColumn>
-            <GridColumn Field=@nameof(WeatherForecast.TemperatureF) HeaderText="Temp. (F)"></GridColumn>
-            <GridColumn Field=@nameof(WeatherForecast.Summary) HeaderText="Summary"></GridColumn>
+            <GridColumn Field=@nameof(SettleOrRegisterDTO.NAME_PAT) HeaderText="姓名"></GridColumn>
+            <GridColumn Field=@nameof(SettleOrRegisterDTO.CODE_AMR_IP) HeaderText="住院号"></GridColumn>
+            <GridColumn Field=@nameof(SettleOrRegisterDTO.DEP_NAME) HeaderText="科室"></GridColumn>
+            <GridColumn Field=@nameof(SettleOrRegisterDTO.REMARK) HeaderText="登记或结算"></GridColumn>
+            <GridColumn Field=@nameof(SettleOrRegisterDTO.METHOD) HeaderText="窗口或床旁"></GridColumn>
+            <GridColumn Field=@nameof(SettleOrRegisterDTO.OPERATE_TIME) HeaderText="日期"></GridColumn>
         </GridColumns>
     </SfGrid>
 }
 
 @code {
-    private WeatherForecast[]? forecasts;
+    private SettleOrRegisterDTO[]? showDataArray;
+    public static List<SettleOrRegisterDTO> listRtn = new List<SettleOrRegisterDTO>();
 
-    protected override async Task OnInitializedAsync()
+    protected override Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+        Task.Run(async () =>
+           {
+               String jsonStr = await _httpClient.GetFromJsonAsync<String>("/dashboard/detail_data");
+               listRtn  = JsonConvert.DeserializeObject<List<SettleOrRegisterDTO>>(jsonStr);
+               showDataArray = listRtn.ToArray();                     
+               await InvokeAsync(StateHasChanged);         
+           });
+           return base.OnInitializedAsync();
     }
 
-    public class WeatherForecast
-    {
-        public DateTime Date { get; set; }
-
-        public int TemperatureC { get; set; }
-
-        public string? Summary { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-    }
 }
