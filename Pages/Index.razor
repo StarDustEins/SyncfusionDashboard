@@ -13,7 +13,7 @@
                 <ContentTemplate>
                     <div class="root-container">
                         <div class="item-container bed-side-settle">
-                            <p>@(Math.Round(100.0 * 30 / 90, 2))%</p>
+                            <p class="big-p">@(Math.Round(100.0 * listRtn.Count(item => item.REMARK == "结算" && item.METHOD == "床旁") / listRtn.Count(item => item.REMARK == "结算"), 2))%</p>
                             <div class="auto-left">
                                 <span class="income-icon e-icon"></span>
                             </div>
@@ -28,7 +28,7 @@
                 <ContentTemplate>
                     <div class="root-container">
                         <div class="item-container bed-side-register">
-                            <p>21</p>
+                            <p class="big-p">@(listRtn.Count(item => item.REMARK == "结算" && item.METHOD == "床旁"))</p>
                             <div class="auto-left">
                                 <span class="expense-icon e-icon"></span>
                             </div>
@@ -43,7 +43,7 @@
                 <ContentTemplate>
                     <div class="root-container">
                         <div class="item-container window-settle">
-                            <p>@(Math.Round(100.0 * 30 / 90, 2))%</p>
+                            <p class="big-p">@(Math.Round(100.0 * listRtn.Count(item => item.REMARK == "登记" && item.METHOD == "床旁") / listRtn.Count(item => item.REMARK == "登记"), 2))%</p>
                             <div class="auto-left">
                                 <span class="balance-icon e-icon"></span>
                             </div>
@@ -58,7 +58,7 @@
                 <ContentTemplate>
                     <div class="root-container">
                         <div class="item-container window-register">
-                            <p>35</p>
+                            <p class="big-p">@(listRtn.Count(item => item.REMARK == "登记" && item.METHOD == "床旁"))</p>
                             <div class="auto-left">
                                 <span class="transaction-icon e-icon"></span>
                             </div>
@@ -69,29 +69,29 @@
                     </div>
                 </ContentTemplate>
             </DashboardLayoutPanel>
-            <DashboardLayoutPanel Column="8" Row="0" SizeX="2" SizeY="1">
-                <ContentTemplate>
-                    <div class="root-container">
-                        <div class="item-container expense">
-                            <p>35</p>
-                            <div class="auto-left">
-                                <span class="balance-icon e-icon"></span>
-                            </div>
-                        </div>
-                        <div class="bottom-container">
-                            <p>床旁登记人次</p>
-                        </div>
-                    </div>
-                </ContentTemplate>
-            </DashboardLayoutPanel>
+            @*  <DashboardLayoutPanel Column="8" Row="0" SizeX="2" SizeY="1">
+            <ContentTemplate>
+            <div class="root-container">
+            <div class="item-container expense">
+            <p>35</p>
+            <div class="auto-left">
+            <span class="balance-icon e-icon"></span>
+            </div>
+            </div>
+            <div class="bottom-container">
+            <p>床旁登记人次</p>
+            </div>
+            </div>
+            </ContentTemplate>
+            </DashboardLayoutPanel>*@
 
 
             <DashboardLayoutPanel Column="0" Row="1" SizeX="8" SizeY="3">
                 <HeaderTemplate>
-                    <span class="title">登记分时间数据</span>
+                    <span class="title">分时业务数据</span>
                 </HeaderTemplate>
                 <ContentTemplate>
-                    <SfChart Width="90%">
+                    <SfChart Width="95%" EnableAnimation="true">
                         <ChartArea>
                             <ChartAreaBorder Width="0"></ChartAreaBorder>
                         </ChartArea>
@@ -103,7 +103,7 @@
                             <ChartAxisMinorTickLines Width="0"></ChartAxisMinorTickLines>
                             <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
                         </ChartPrimaryXAxis>
-                        <ChartPrimaryYAxis Title="业务总量">
+                        <ChartPrimaryYAxis Title="业务总量" RangePadding="ChartRangePadding.Round">
                             <ChartAxisMinorGridLines Width="1"></ChartAxisMinorGridLines>
                             <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
                             <ChartAxisMinorTickLines Width="0"></ChartAxisMinorTickLines>
@@ -113,7 +113,7 @@
                             <ChartSeries ColumnWidth="0.5" DataSource="@showData" XName="Hour" YName="WindowRegisterCount" Width="2" Name="窗口登记量" Type="ChartSeriesType.StackingColumn">
                                 <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
                                 <ChartMarker>
-                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
+                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Auto" Name="TextMapping">
                                         <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
                                     </ChartDataLabel>
                                 </ChartMarker>
@@ -121,7 +121,7 @@
                             <ChartSeries ColumnWidth="0.5" DataSource="@showData" XName="Hour" YName="BedSideRegisterCount" Width="2" Name="床旁登记量" Type="ChartSeriesType.StackingColumn">
                                 <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
                                 <ChartMarker>
-                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
+                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Auto" Name="TextMapping">
                                         <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
                                     </ChartDataLabel>
                                 </ChartMarker>
@@ -129,7 +129,7 @@
                             <ChartSeries ColumnWidth="0.5" DataSource="@showData" XName="Hour" YName="WindowSettleCount" Width="2" Name="窗口结算量" Type="ChartSeriesType.StackingColumn">
                                 <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
                                 <ChartMarker>
-                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
+                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Auto" Name="TextMapping">
                                         <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
                                     </ChartDataLabel>
                                 </ChartMarker>
@@ -137,7 +137,7 @@
                             <ChartSeries ColumnWidth="0.5" DataSource="@showData" XName="Hour" YName="BedSideSettleCount" Width="2" Name="床旁结算量" Type="ChartSeriesType.StackingColumn">
                                 <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
                                 <ChartMarker>
-                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" Name="TextMapping">
+                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Auto" Name="TextMapping">
                                         <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
                                     </ChartDataLabel>
                                 </ChartMarker>
@@ -148,35 +148,41 @@
                     </SfChart>
                 </ContentTemplate>
             </DashboardLayoutPanel>
-            
-            <DashboardLayoutPanel Column="8" Row="1" SizeX="2" SizeY="5">
+
+            <DashboardLayoutPanel Column="8" Row="1" SizeX="2" SizeY="6">
                 <HeaderTemplate>
                     <span class="title">科室开展情况</span>
                 </HeaderTemplate>
                 <ContentTemplate>
-                    <SfChart  Width="90%">
+                    <SfChart Width="90%" EnableAnimation="true">
                         <ChartArea>
                             <ChartAreaBorder Width="0"></ChartAreaBorder>
                         </ChartArea>
-                        <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category">
+                        <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category" LabelFormat="-------------------{value}">
                             <ChartAxisMajorGridLines Width="0"></ChartAxisMajorGridLines>
                             <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
+                            <ChartAxisLabelStyle Size="11px"></ChartAxisLabelStyle>
                         </ChartPrimaryXAxis>
-                        <ChartPrimaryYAxis  LabelFormat="{value}%" EdgeLabelPlacement="EdgeLabelPlacement.Shift" RangePadding="ChartRangePadding.None">
+                        <ChartPrimaryYAxis LabelFormat="{value}%" EdgeLabelPlacement="EdgeLabelPlacement.None" RangePadding="ChartRangePadding.Auto">
                             <ChartAxisMajorTickLines Width="1"></ChartAxisMajorTickLines>
                             <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
                         </ChartPrimaryYAxis>
                         <ChartSeriesCollection>
-                            <ChartSeries ColumnWidth="0.6" DataSource="@DeptUsage" XName="DeptName" YName="BedSideRegisterRate" Width="2" Name="床旁登记率" Type="ChartSeriesType.Bar">
+                            <ChartSeries ColumnWidth="0.6" DataSource="@deptUsages" XName="DeptName" YName="BedSideRegisterRate" Width="2" Name="床旁登记率" Type="ChartSeriesType.Bar">
                                 <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
                                 <ChartMarker>
-                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer" >
-                                        <ChartDataLabelFont Size="9px" FontWeight="600"></ChartDataLabelFont>
+                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer">
+                                        <ChartDataLabelFont Size="11px" FontWeight="600"></ChartDataLabelFont>
                                     </ChartDataLabel>
                                 </ChartMarker>
                             </ChartSeries>
-                            <ChartSeries ColumnWidth="0.6" DataSource="@DeptUsage" XName="DeptName" YName="BedSideSettleRate" Width="2" Name="床旁结算率" Type="ChartSeriesType.Bar">
+                            <ChartSeries ColumnWidth="1.0" DataSource="@deptUsages" XName="DeptName" YName="BedSideSettleRate" Width="2" Name="床旁结算率" Type="ChartSeriesType.Bar">
                                 <ChartSeriesBorder Width="1" Color="#ffffff"></ChartSeriesBorder>
+                                <ChartMarker>
+                                    <ChartDataLabel Visible="true" Position="Syncfusion.Blazor.Charts.LabelPosition.Outer">
+                                        <ChartDataLabelFont Size="11px" FontWeight="600"></ChartDataLabelFont>
+                                    </ChartDataLabel>
+                                </ChartMarker>
                             </ChartSeries>
                         </ChartSeriesCollection>
                         <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
@@ -184,8 +190,8 @@
                     </SfChart>
                 </ContentTemplate>
             </DashboardLayoutPanel>
-            
-            <DashboardLayoutPanel Column="0" Row="9" SizeX="5" SizeY="2">
+
+            <DashboardLayoutPanel Column="0" Row="9" SizeX="4" SizeY="2">
                 <HeaderTemplate>
                     <span class="title">出院情况总览</span>
                 </HeaderTemplate>
@@ -194,15 +200,49 @@
                         <AccumulationChartTooltipSettings Enable="true"></AccumulationChartTooltipSettings>
                         <AccumulationChartLegendSettings Visible="false"></AccumulationChartLegendSettings>
                         <AccumulationChartSeriesCollection>
-                            <AccumulationChartSeries DataSource="@FunnelChartPoints" XName="InterviewProcess" YName="Candidates"
-                                                     Type="AccumulationType.Funnel" Explode="true" Width="80%" Height="80%" NeckWidth="40%" NeckHeight="20%">
-                                <AccumulationDataLabelSettings Visible="true" Name="DataLabelMappingName" Position="AccumulationLabelPosition.Inside">
+                            <AccumulationChartSeries DataSource="@funnelData" XName="status" YName="amount" Type="AccumulationType.Funnel" Explode="true" Width="70%" Height="80%" NeckWidth="20%" NeckHeight="20%">
+                                <AccumulationDataLabelSettings Visible="true" Name="description" Position="AccumulationLabelPosition.Inside">
                                     <AccumulationChartConnector Length="5%"></AccumulationChartConnector>
                                     <AccumulationChartDataLabelFont FontWeight="600"></AccumulationChartDataLabelFont>
                                 </AccumulationDataLabelSettings>
                             </AccumulationChartSeries>
                         </AccumulationChartSeriesCollection>
                     </SfAccumulationChart>
+                </ContentTemplate>
+            </DashboardLayoutPanel>
+            <DashboardLayoutPanel Column="4" Row="9" SizeX="4" SizeY="2">
+                <HeaderTemplate>
+                    <span class="title">等候时间对比分析</span>
+                </HeaderTemplate>
+                <ContentTemplate>
+                    <SfChart  Width="95%" >
+                        <ChartArea>
+                            <ChartAreaBorder Width="0">
+
+                            </ChartAreaBorder>
+                        </ChartArea>
+                       @* <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category"  EdgeLabelPlacement="EdgeLabelPlacement.Shift">
+                            <ChartAxisMajorGridLines Width="0"></ChartAxisMajorGridLines>
+                        </ChartPrimaryXAxis>*@
+                      @*  <ChartPrimaryYAxis  Minimum="0" Maximum="4" Interval="1">
+                            <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
+                            <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
+                        </ChartPrimaryYAxis>*@
+                        <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
+                        <ChartLegendSettings EnableHighlight="true"></ChartLegendSettings>
+                        <ChartSeriesCollection>
+                            <ChartSeries DataSource="@windowWaitTimeDatas" Name="窗口结算等待时间" XName="Index" Width="2"
+                                         Opacity="0.5" YName="WaitTime" Type="ChartSeriesType.SplineArea">
+                                <ChartSeriesBorder Width="2"></ChartSeriesBorder>
+                                <ChartMarker IsFilled="true" Visible="true" Width="6" Height="6" Shape="ChartShape.Circle"></ChartMarker>
+                            </ChartSeries>
+                            <ChartSeries DataSource="@bedSideWaitTimeDatas" Name="床旁结算等待时间" XName="Index" Width="2"
+                                         Opacity="0.5" YName="WaitTime" Type="ChartSeriesType.SplineArea">
+                                <ChartSeriesBorder Width="2"></ChartSeriesBorder>
+                                <ChartMarker IsFilled="true" Visible="true" Height="7" Width="7" Shape="ChartShape.Diamond"></ChartMarker>
+                            </ChartSeries>
+                        </ChartSeriesCollection>
+                    </SfChart>
                 </ContentTemplate>
             </DashboardLayoutPanel>
         </DashboardLayoutPanels>
@@ -213,96 +253,89 @@
     // dashboard 参数
     SfDashboardLayout dashboardObject;
     private Theme Theme { get; set; }
-    
-    public static List<SettleOrRegisterDTO> listRtn = new List<SettleOrRegisterDTO>();
+
+    public static List<SettleOrRegisterDTO>? listRtn = new List<SettleOrRegisterDTO>();
     public List<HourlyData> showData = new List<HourlyData>();
-    
+    private List<DeptUsageData> deptUsages = new List<DeptUsageData>();
+    private List<FunnelData>? funnelData = new List<FunnelData>();
 
-    private List<HourlyData> hourly = new List<HourlyData>
-    {
-        new HourlyData { Date = "2022-01-01", Hour = "07", DeptName = "心血管内科", WindowRegisterCount = 4, WindowSettleCount = 7, BedSideRegisterCount = 12, BedSideSettleCount = 40 },
-        new HourlyData { Date = "2022-01-01", Hour = "08", DeptName = "心血管内科", WindowRegisterCount = 5, WindowSettleCount = 4, BedSideRegisterCount = 42, BedSideSettleCount = 20 },
-        new HourlyData { Date = "2022-01-01", Hour = "09", DeptName = "心血管内科", WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "10", DeptName = "心血管内科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "11", DeptName = "心血管内科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
-        new HourlyData { Date = "2022-01-01", Hour = "12", DeptName = "心血管内科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
-        new HourlyData { Date = "2022-01-01", Hour = "13", DeptName = "心血管内科", WindowRegisterCount = 4, WindowSettleCount = 7, BedSideRegisterCount = 12, BedSideSettleCount = 40 },
-        new HourlyData { Date = "2022-01-01", Hour = "14", DeptName = "心血管内科", WindowRegisterCount = 5, WindowSettleCount = 4, BedSideRegisterCount = 42, BedSideSettleCount = 20 },
-        new HourlyData { Date = "2022-01-01", Hour = "15", DeptName = "心血管内科", WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "16", DeptName = "心血管内科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "17", DeptName = "心血管内科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
-        new HourlyData { Date = "2022-01-01", Hour = "18", DeptName = "心血管内科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
-        new HourlyData { Date = "2022-01-01", Hour = "07", DeptName = "泌尿外科", WindowRegisterCount = 4, WindowSettleCount = 7, BedSideRegisterCount = 12, BedSideSettleCount = 40 },
-        new HourlyData { Date = "2022-01-01", Hour = "08", DeptName = "泌尿外科", WindowRegisterCount = 5, WindowSettleCount = 4, BedSideRegisterCount = 42, BedSideSettleCount = 20 },
-        new HourlyData { Date = "2022-01-01", Hour = "09", DeptName = "泌尿外科", WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "10", DeptName = "泌尿外科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "11", DeptName = "泌尿外科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
-        new HourlyData { Date = "2022-01-01", Hour = "12", DeptName = "泌尿外科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
-        new HourlyData { Date = "2022-01-01", Hour = "13", DeptName = "泌尿外科", WindowRegisterCount = 4, WindowSettleCount = 7, BedSideRegisterCount = 12, BedSideSettleCount = 40 },
-        new HourlyData { Date = "2022-01-01", Hour = "14", DeptName = "泌尿外科", WindowRegisterCount = 5, WindowSettleCount = 4, BedSideRegisterCount = 42, BedSideSettleCount = 20 },
-        new HourlyData { Date = "2022-01-01", Hour = "15", DeptName = "泌尿外科", WindowRegisterCount = 6, WindowSettleCount = 1, BedSideRegisterCount = 42, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "16", DeptName = "泌尿外科", WindowRegisterCount = 12, WindowSettleCount = 21, BedSideRegisterCount = 12, BedSideSettleCount = 10 },
-        new HourlyData { Date = "2022-01-01", Hour = "17", DeptName = "泌尿外科", WindowRegisterCount = 53, WindowSettleCount = 31, BedSideRegisterCount = 20, BedSideSettleCount = 12 },
-        new HourlyData { Date = "2022-01-01", Hour = "18", DeptName = "泌尿外科", WindowRegisterCount = 55, WindowSettleCount = 22, BedSideRegisterCount = 30, BedSideSettleCount = 9 },
-    };
-
-    
-    public class DeptUsageData
-    {
-        public string DeptName { get; set; }
-        public float BedSideRegisterRate { get; set; }
-        public float BedSideSettleRate { get; set; }
-    }
-    public List<DeptUsageData> DeptUsage { get; set; } = new List<DeptUsageData>
-    {
-        new DeptUsageData(){ DeptName = "心血管内科", BedSideRegisterRate = 11.54f, BedSideSettleRate = 10.23f },
-        new DeptUsageData(){ DeptName = "消化内科", BedSideRegisterRate = 21.54f, BedSideSettleRate = 3.23f },
-        new DeptUsageData(){ DeptName = "泌尿外科", BedSideRegisterRate = 1.54f, BedSideSettleRate = 5.23f },
-        new DeptUsageData(){ DeptName = "急诊科", BedSideRegisterRate = 5.54f, BedSideSettleRate = 6.23f },
-        new DeptUsageData(){ DeptName = "胃肠科", BedSideRegisterRate = 6.54f, BedSideSettleRate = 11.23f },
-        new DeptUsageData(){ DeptName = "普外科", BedSideRegisterRate = 7.54f, BedSideSettleRate = 12.23f },
-        new DeptUsageData(){ DeptName = "耳鼻喉科", BedSideRegisterRate = 21.54f, BedSideSettleRate = 29.23f },
-        new DeptUsageData(){ DeptName = "眼科", BedSideRegisterRate = 0.54f, BedSideSettleRate = 6.23f },
-        new DeptUsageData(){ DeptName = "口腔科", BedSideRegisterRate = 31.54f, BedSideSettleRate = 3.23f },
-        
-    };
+    private List<WaitTimeData> windowWaitTimeDatas = new List<WaitTimeData>();
+    private List<WaitTimeData> bedSideWaitTimeDatas = new List<WaitTimeData>();
 
     protected override Task OnInitializedAsync()
     {
         Task.Run(async () =>
            {
-               String jsonStr = await _httpClient.GetFromJsonAsync<String>("/dashboard/detail_data");
-               listRtn  = JsonConvert.DeserializeObject<List<SettleOrRegisterDTO>>(jsonStr);
+               String? jsonStr = await _httpClient.GetFromJsonAsync<String>("/dashboard/detail_data");
+               listRtn = JsonConvert.DeserializeObject<List<SettleOrRegisterDTO>>(jsonStr);
 
-               //数据转换
-               List<HourlyData> list = listRtn.GroupBy(a => a.HOURS).Select(b => (new HourlyData { Hour = b.Key,
-               BedSideRegisterCount=b.Count(item => item.REMARK=="登记" && item.METHOD=="床旁"),
-               WindowRegisterCount = b.Count(item => item.REMARK=="登记" && item.METHOD=="窗口"),
-               BedSideSettleCount = b.Count(item => item.REMARK=="结算" && item.METHOD=="床旁"),
-               WindowSettleCount = b.Count(item => item.REMARK=="结算" && item.METHOD=="窗口")})).OrderBy(c=>c.Hour).ToList();        
-               showData = list;
+               funnelData = await _httpClient.GetFromJsonAsync<List<FunnelData>>("/dashboard/funnel_data");
+               funnelData = funnelData.OrderByDescending(f => f.index).ToList();
+
+               listRtn.Count(item => item.REMARK == "登记" && item.METHOD == "床旁");
+           // 分时数据
+               showData = listRtn.GroupBy(a => a.HOURS).Select(b => (new HourlyData
+                   {
+                       Hour = b.Key,
+                       BedSideRegisterCount = b.Count(item => item.REMARK == "登记" && item.METHOD == "床旁"),
+                       WindowRegisterCount = b.Count(item => item.REMARK == "登记" && item.METHOD == "窗口"),
+                       BedSideSettleCount = b.Count(item => item.REMARK == "结算" && item.METHOD == "床旁"),
+                       WindowSettleCount = b.Count(item => item.REMARK == "结算" && item.METHOD == "窗口")
+                   })).OrderBy(c => c.Hour).ToList();
+
+           // 科室使用率
+               deptUsages = listRtn.GroupBy(x => x.DEP_NAME).Select(y => (new DeptUsageData
+                   {
+                       DeptName = y.Key,
+                       BedSideRegisterRate = Math.Round(100.00f * y.Count(item => item.REMARK == "登记" && item.METHOD == "床旁") / y.Count(item => item.REMARK == "登记"), 2),
+                       BedSideSettleRate = Math.Round(100.00f * y.Count(item => item.REMARK == "结算" && item.METHOD == "床旁") / y.Count(item => item.REMARK == "结算"), 2)
+                   })).OrderBy(w => w.BedSideSettleRate).ThenBy(v => v.BedSideRegisterRate).ToList();
+           // 等候时间数据
+               var WindowWaitTime = Math.Round(listRtn.Where(c => c.METHOD == "窗口" && c.REMARK == "结算").Average(d => (DateTime.Parse(d.OPERATE_TIME) - DateTime.Parse(d.DT_END)).TotalHours), 2);
+               var BedSideWaitTime = Math.Round(listRtn.Where(c => c.METHOD == "床旁" && c.REMARK == "结算").Average(d => (DateTime.Parse(d.OPERATE_TIME) - DateTime.Parse(d.DT_END)).TotalHours), 2);
+
+           //windowWaitTimeDatas = new List<WaitTimeData>();
+           //bedSideWaitTimeDatas = new List<WaitTimeData>();
+               Random random = new Random();
+               for (int i = 0; i < 10; i++)
+               {
+                   
+                   WaitTimeData windowWaitTimeData = new WaitTimeData
+                   {
+                       Method = "窗口",
+                       Index = i,
+                       WaitTime = WindowWaitTime * (1 + random.Next(-10, 20) * 0.01f)
+                   };
+                   windowWaitTimeDatas.Add(windowWaitTimeData);
+
+                   WaitTimeData bedSideWaitTimeData = new WaitTimeData
+                   {
+                       Method = "床旁",
+                       Index = i,
+                       WaitTime = BedSideWaitTime * (1 + random.Next(-15, 15) * 0.01f)
+                   };
+                   bedSideWaitTimeDatas.Add(bedSideWaitTimeData);
+               }
+
                await InvokeAsync(StateHasChanged);
-               
            });
         return base.OnInitializedAsync();
     }
 
+    public class WaitTimeData
+    {
+        public int Index { get; set; }
+        public string Method { get; set; }
+        public double WaitTime { get; set; }
+    }
 
     public class FunnelData
     {
-        public string InterviewProcess { get; set; }
-        public double Candidates { get; set; }
-        public string DataLabelMappingName { get; set; }
+        public string status { get; set; }
+        public double amount { get; set; }
+        public string description { get; set; }
+        public int index { get; set; }
     }
-    public List<FunnelData> FunnelChartPoints { get; set; } = new List<FunnelData>
-    {
-        new FunnelData { InterviewProcess = "Hired", Candidates = 99, DataLabelMappingName="Hired: 55"},
-        new FunnelData { InterviewProcess = "Personal Interview", Candidates = 58, DataLabelMappingName="Personal Interview: 58"},
-        new FunnelData { InterviewProcess = "Telephonic Interview", Candidates = 85, DataLabelMappingName="Telephonic Interview: 85"},
-        new FunnelData { InterviewProcess = "Screening", Candidates = 105, DataLabelMappingName="Screening: 105"},
-        new FunnelData { InterviewProcess = "Initial Validation", Candidates = 145, DataLabelMappingName="Initial Validation: 145"},
-        new FunnelData { InterviewProcess = "Candidates Applied", Candidates = 10, DataLabelMappingName="Candidates Applied: 250"},
-    };
 
     public class HourlyData
     {
@@ -317,18 +350,12 @@
         public int BedSideRegisterCount { get; set; }
     }
 
-    public class ResultDTO
+    public class DeptUsageData
     {
-        public string code { set; get; }
-        public string data { set; get; }
-        public string msg { set; get; }
+        public string DeptName { get; set; }
+        public double BedSideRegisterRate { get; set; }
+        public double BedSideSettleRate { get; set; }
     }
-
-    public class SettleOrRegisterInputDTO
-    {
-        public string dep_name { set; get; } = "";
-    }
-
     public class SettleOrRegisterDTO
     {
         public string NAME_PAT { get; set; } = "";
@@ -340,18 +367,6 @@
         public string OPERATE_TIME { get; set; } = "";
         public string HOURS { get; set; } = "";
         public string DT_END { get; set; } = "";
-    }
-
-    private class TransactionData
-    {
-        public string Category { get; set; }
-        public string Description { get; set; }
-        public string PaymentMode { get; set; }
-        public string IconCss { get; set; }
-        public string TransactoinId { get; set; }
-        public bool IsIncome { get; set; }
-        public bool IsExpense { get; set; }
-        public int Amount { get; set; }
     }
 }
 
@@ -382,6 +397,11 @@
 
     .root-container {
         height: 100%;
+    }
+
+    .big-p {
+        font-size:50px;
+        font-weight:bold;
     }
 
     .title {
@@ -471,40 +491,33 @@
         padding: 1rem;
     }
 
-    @@font-face {
-        font-family: 'e-sb-icons';
-        src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype");
-        font-weight: normal;
-        font-style: normal;
-    }
-
     .bed-side-settle:after {
         content: "\e900";
-        font-size: 24px;
+        font-size: 50px;
         font-family: "e-sb-icons";
     }
 
     .expense:after {
         content: "\e901";
-        font-size: 24px;
+        font-size: 50px;
         font-family: "e-sb-icons";
     }
 
     .bed-side-register:after {
         content: "\e902";
-        font-size: 24px;
+        font-size: 50px;
         font-family: "e-sb-icons";
     }
 
     .window-register:after {
         content: "\e903";
-        font-size: 24px;
+        font-size:50px;
         font-family: "e-sb-icons";
     }
 
     .window-settle:after {
-        content: "\e903";
-        font-size: 24px;
+        content: "\e901";
+        font-size: 50px;
         font-family: "e-sb-icons";
     }
 
@@ -567,4 +580,11 @@
     .e-gridheader {
         padding-right: 0px !important;
     }
+
+    @@font-face {
+		font-family: 'e-sb-icons';
+		src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype");
+		font-weight: normal;
+		font-style: normal;
+	}
 </style>

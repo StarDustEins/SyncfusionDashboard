@@ -10,14 +10,10 @@
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Authorization.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Authorization.dll": {}
         }
       },
       "Microsoft.AspNetCore.Components/6.0.5": {
@@ -27,14 +23,10 @@
           "Microsoft.AspNetCore.Components.Analyzers": "6.0.5"
         },
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.dll": {}
         }
       },
       "Microsoft.AspNetCore.Components.Analyzers/6.0.5": {
@@ -49,14 +41,10 @@
           "Microsoft.AspNetCore.Components": "6.0.5"
         },
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {}
         }
       },
       "Microsoft.AspNetCore.Components.Web/6.0.5": {
@@ -69,14 +57,10 @@
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll": {}
         }
       },
       "Microsoft.AspNetCore.Components.WebAssembly/6.0.0": {
@@ -89,14 +73,10 @@
           "Microsoft.JSInterop.WebAssembly": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {}
         },
         "build": {
           "build/net6.0/Microsoft.AspNetCore.Components.WebAssembly.props": {}
@@ -111,14 +91,10 @@
       "Microsoft.AspNetCore.Metadata/6.0.5": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -137,14 +113,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
@@ -153,14 +125,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration.Binder/6.0.0": {
@@ -169,14 +137,10 @@
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration.FileExtensions/6.0.0": {
@@ -189,14 +153,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration.Json/6.0.0": {
@@ -209,14 +169,10 @@
           "System.Text.Json": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection/6.0.0": {
@@ -226,14 +182,10 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -242,14 +194,10 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -261,14 +209,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -282,14 +226,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -298,14 +238,10 @@
       "Microsoft.Extensions.FileSystemGlobbing/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -321,27 +257,19 @@
           "System.Diagnostics.DiagnosticSource": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {}
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -354,14 +282,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/6.0.0": {
@@ -370,14 +294,10 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -386,14 +306,10 @@
       "Microsoft.JSInterop/6.0.5": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.JSInterop.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.JSInterop.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.JSInterop.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.JSInterop.dll": {}
         }
       },
       "Microsoft.JSInterop.WebAssembly/6.0.0": {
@@ -402,14 +318,10 @@
           "Microsoft.JSInterop": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.JSInterop.WebAssembly.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.JSInterop.WebAssembly.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.JSInterop.WebAssembly.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.JSInterop.WebAssembly.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -448,14 +360,10 @@
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "Syncfusion.Blazor.Buttons/20.2.0.43": {
@@ -464,14 +372,10 @@
           "Syncfusion.Blazor.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Buttons.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Buttons.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Buttons.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Buttons.dll": {}
         }
       },
       "Syncfusion.Blazor.Calendars/20.2.0.43": {
@@ -483,14 +387,10 @@
           "Syncfusion.Blazor.Lists": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Calendars.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Calendars.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Calendars.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Calendars.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Calendars.props": {}
@@ -508,14 +408,10 @@
           "Syncfusion.PdfExport.Net.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Charts.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Charts.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Charts.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Charts.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Charts.props": {}
@@ -529,18 +425,13 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "6.0.5",
           "Microsoft.CSharp": "4.7.0",
-          "Syncfusion.Licensing": "20.2.0.43",
           "System.Text.Json": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Core.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Core.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Core.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Core.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Core.props": {}
@@ -555,14 +446,10 @@
           "Syncfusion.Blazor.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Data.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Data.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Data.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Data.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Data.props": {}
@@ -577,14 +464,10 @@
           "Syncfusion.Blazor.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.DataVizCommon.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.DataVizCommon.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.DataVizCommon.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.DataVizCommon.dll": {}
         }
       },
       "Syncfusion.Blazor.DropDowns/20.2.0.43": {
@@ -597,14 +480,10 @@
           "Syncfusion.Blazor.Spinner": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.DropDowns.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.DropDowns.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.DropDowns.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.DropDowns.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.DropDowns.props": {}
@@ -629,14 +508,10 @@
           "Syncfusion.PdfExport.Net.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Grids.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Grids.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Grids.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Grids.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Grid.props": {}
@@ -655,14 +530,10 @@
           "Syncfusion.Blazor.SplitButtons": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Inputs.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Inputs.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Inputs.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Inputs.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Inputs.props": {}
@@ -678,14 +549,10 @@
           "Syncfusion.Blazor.Data": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Layouts.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Layouts.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Layouts.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Layouts.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Layouts.props": {}
@@ -702,14 +569,10 @@
           "Syncfusion.Blazor.Data": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Lists.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Lists.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Lists.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Lists.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Lists.props": {}
@@ -731,14 +594,10 @@
           "Syncfusion.Blazor.Spinner": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Navigations.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Navigations.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Navigations.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Navigations.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Navigations.props": {}
@@ -754,14 +613,10 @@
           "Syncfusion.Blazor.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Popups.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Popups.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Popups.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Popups.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Popups.props": {}
@@ -776,14 +631,10 @@
           "Syncfusion.Blazor.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Spinner.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Spinner.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Spinner.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Spinner.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Spinner.props": {}
@@ -801,14 +652,10 @@
           "Syncfusion.Blazor.Spinner": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.SplitButtons.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.SplitButtons.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.SplitButtons.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.SplitButtons.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.SplitButtons.props": {}
@@ -820,14 +667,10 @@
       "Syncfusion.Blazor.Themes/20.2.0.43": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Themes.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Themes.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Themes.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Themes.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Themes.props": {}
@@ -842,23 +685,10 @@
           "NETStandard.Library": "2.0.0"
         },
         "compile": {
-          "lib/net5.0/Syncfusion.ExcelExport.Net.dll": {
-            "related": ".xml"
-          }
+          "lib/net5.0/Syncfusion.ExcelExport.Net.dll": {}
         },
         "runtime": {
-          "lib/net5.0/Syncfusion.ExcelExport.Net.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Syncfusion.Licensing/20.2.0.43": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Syncfusion.Licensing.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/Syncfusion.Licensing.dll": {}
+          "lib/net5.0/Syncfusion.ExcelExport.Net.dll": {}
         }
       },
       "Syncfusion.PdfExport.Net.Core/20.2.0.43": {
@@ -867,14 +697,10 @@
           "NETStandard.Library": "2.0.0"
         },
         "compile": {
-          "lib/net5.0/Syncfusion.PdfExport.Net.dll": {
-            "related": ".xml"
-          }
+          "lib/net5.0/Syncfusion.PdfExport.Net.dll": {}
         },
         "runtime": {
-          "lib/net5.0/Syncfusion.PdfExport.Net.dll": {
-            "related": ".xml"
-          }
+          "lib/net5.0/Syncfusion.PdfExport.Net.dll": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -885,9 +711,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Collections.dll": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.3/System.Collections.dll": {}
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -898,9 +722,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.3/_._": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -909,14 +731,10 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -930,9 +748,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.3/_._": {}
         }
       },
       "System.IO/4.3.0": {
@@ -945,22 +761,16 @@
           "System.Threading.Tasks": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.5/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.5/_._": {}
         }
       },
       "System.IO.Pipelines/6.0.3": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.IO.Pipelines.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.IO.Pipelines.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.IO.Pipelines.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.IO.Pipelines.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -976,9 +786,7 @@
           "System.Runtime.Extensions": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.6/System.Linq.dll": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.6/System.Linq.dll": {}
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.dll": {}
@@ -994,9 +802,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.5/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.5/_._": {}
         }
       },
       "System.Reflection.Primitives/4.3.0": {
@@ -1007,9 +813,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.0/_._": {}
         }
       },
       "System.Resources.ResourceManager/4.3.0": {
@@ -1022,9 +826,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.0/_._": {}
         }
       },
       "System.Runtime/4.3.0": {
@@ -1034,22 +836,16 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         },
         "compile": {
-          "ref/netstandard1.5/System.Runtime.dll": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -1063,9 +859,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.5/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.5/_._": {}
         }
       },
       "System.Text.Encoding/4.3.0": {
@@ -1076,9 +870,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.3/_._": {}
         }
       },
       "System.Text.Encodings.Web/6.0.0": {
@@ -1087,14 +879,10 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Text.Encodings.Web.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Text.Encodings.Web.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -1113,14 +901,10 @@
           "System.Text.Encodings.Web": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Text.Json.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Text.Json.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -1134,9 +918,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.3/_._": {}
         }
       }
     },
@@ -1149,14 +931,10 @@
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Authorization.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Authorization.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Authorization.dll": {}
         }
       },
       "Microsoft.AspNetCore.Components/6.0.5": {
@@ -1166,14 +944,10 @@
           "Microsoft.AspNetCore.Components.Analyzers": "6.0.5"
         },
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.dll": {}
         }
       },
       "Microsoft.AspNetCore.Components.Analyzers/6.0.5": {
@@ -1188,14 +962,10 @@
           "Microsoft.AspNetCore.Components": "6.0.5"
         },
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {}
         }
       },
       "Microsoft.AspNetCore.Components.Web/6.0.5": {
@@ -1208,14 +978,10 @@
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll": {}
         }
       },
       "Microsoft.AspNetCore.Components.WebAssembly/6.0.0": {
@@ -1228,14 +994,10 @@
           "Microsoft.JSInterop.WebAssembly": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {}
         },
         "build": {
           "build/net6.0/Microsoft.AspNetCore.Components.WebAssembly.props": {}
@@ -1250,14 +1012,10 @@
       "Microsoft.AspNetCore.Metadata/6.0.5": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -1276,14 +1034,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
@@ -1292,14 +1046,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration.Binder/6.0.0": {
@@ -1308,14 +1058,10 @@
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration.FileExtensions/6.0.0": {
@@ -1328,14 +1074,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration.Json/6.0.0": {
@@ -1348,14 +1090,10 @@
           "System.Text.Json": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection/6.0.0": {
@@ -1365,14 +1103,10 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -1381,14 +1115,10 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -1400,14 +1130,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -1421,14 +1147,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -1437,14 +1159,10 @@
       "Microsoft.Extensions.FileSystemGlobbing/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -1460,27 +1178,19 @@
           "System.Diagnostics.DiagnosticSource": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {}
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -1493,14 +1203,10 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/6.0.0": {
@@ -1509,14 +1215,10 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -1525,14 +1227,10 @@
       "Microsoft.JSInterop/6.0.5": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.JSInterop.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.JSInterop.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.JSInterop.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.JSInterop.dll": {}
         }
       },
       "Microsoft.JSInterop.WebAssembly/6.0.0": {
@@ -1541,14 +1239,10 @@
           "Microsoft.JSInterop": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.JSInterop.WebAssembly.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.JSInterop.WebAssembly.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.JSInterop.WebAssembly.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.JSInterop.WebAssembly.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -1587,14 +1281,10 @@
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -1690,14 +1380,10 @@
           "Syncfusion.Blazor.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Buttons.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Buttons.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Buttons.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Buttons.dll": {}
         }
       },
       "Syncfusion.Blazor.Calendars/20.2.0.43": {
@@ -1709,14 +1395,10 @@
           "Syncfusion.Blazor.Lists": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Calendars.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Calendars.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Calendars.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Calendars.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Calendars.props": {}
@@ -1734,14 +1416,10 @@
           "Syncfusion.PdfExport.Net.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Charts.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Charts.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Charts.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Charts.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Charts.props": {}
@@ -1755,18 +1433,13 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "6.0.5",
           "Microsoft.CSharp": "4.7.0",
-          "Syncfusion.Licensing": "20.2.0.43",
           "System.Text.Json": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Core.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Core.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Core.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Core.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Core.props": {}
@@ -1781,14 +1454,10 @@
           "Syncfusion.Blazor.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Data.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Data.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Data.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Data.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Data.props": {}
@@ -1803,14 +1472,10 @@
           "Syncfusion.Blazor.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.DataVizCommon.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.DataVizCommon.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.DataVizCommon.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.DataVizCommon.dll": {}
         }
       },
       "Syncfusion.Blazor.DropDowns/20.2.0.43": {
@@ -1823,14 +1488,10 @@
           "Syncfusion.Blazor.Spinner": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.DropDowns.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.DropDowns.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.DropDowns.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.DropDowns.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.DropDowns.props": {}
@@ -1855,14 +1516,10 @@
           "Syncfusion.PdfExport.Net.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Grids.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Grids.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Grids.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Grids.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Grid.props": {}
@@ -1881,14 +1538,10 @@
           "Syncfusion.Blazor.SplitButtons": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Inputs.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Inputs.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Inputs.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Inputs.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Inputs.props": {}
@@ -1904,14 +1557,10 @@
           "Syncfusion.Blazor.Data": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Layouts.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Layouts.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Layouts.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Layouts.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Layouts.props": {}
@@ -1928,14 +1577,10 @@
           "Syncfusion.Blazor.Data": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Lists.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Lists.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Lists.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Lists.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Lists.props": {}
@@ -1957,14 +1602,10 @@
           "Syncfusion.Blazor.Spinner": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Navigations.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Navigations.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Navigations.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Navigations.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Navigations.props": {}
@@ -1980,14 +1621,10 @@
           "Syncfusion.Blazor.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Popups.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Popups.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Popups.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Popups.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Popups.props": {}
@@ -2002,14 +1639,10 @@
           "Syncfusion.Blazor.Core": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Spinner.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Spinner.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Spinner.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Spinner.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Spinner.props": {}
@@ -2027,14 +1660,10 @@
           "Syncfusion.Blazor.Spinner": "20.2.0.43"
         },
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.SplitButtons.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.SplitButtons.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.SplitButtons.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.SplitButtons.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.SplitButtons.props": {}
@@ -2046,14 +1675,10 @@
       "Syncfusion.Blazor.Themes/20.2.0.43": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Syncfusion.Blazor.Themes.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Themes.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Syncfusion.Blazor.Themes.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Syncfusion.Blazor.Themes.dll": {}
         },
         "build": {
           "buildTransitive/Syncfusion.Blazor.Themes.props": {}
@@ -2068,23 +1693,10 @@
           "NETStandard.Library": "2.0.0"
         },
         "compile": {
-          "lib/net5.0/Syncfusion.ExcelExport.Net.dll": {
-            "related": ".xml"
-          }
+          "lib/net5.0/Syncfusion.ExcelExport.Net.dll": {}
         },
         "runtime": {
-          "lib/net5.0/Syncfusion.ExcelExport.Net.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Syncfusion.Licensing/20.2.0.43": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Syncfusion.Licensing.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/Syncfusion.Licensing.dll": {}
+          "lib/net5.0/Syncfusion.ExcelExport.Net.dll": {}
         }
       },
       "Syncfusion.PdfExport.Net.Core/20.2.0.43": {
@@ -2093,14 +1705,10 @@
           "NETStandard.Library": "2.0.0"
         },
         "compile": {
-          "lib/net5.0/Syncfusion.PdfExport.Net.dll": {
-            "related": ".xml"
-          }
+          "lib/net5.0/Syncfusion.PdfExport.Net.dll": {}
         },
         "runtime": {
-          "lib/net5.0/Syncfusion.PdfExport.Net.dll": {
-            "related": ".xml"
-          }
+          "lib/net5.0/Syncfusion.PdfExport.Net.dll": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -2112,9 +1720,7 @@
           "runtime.any.System.Collections": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Collections.dll": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.3/System.Collections.dll": {}
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -2125,9 +1731,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.3/_._": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -2136,14 +1740,10 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -2158,9 +1758,7 @@
           "runtime.any.System.Globalization": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.3/_._": {}
         }
       },
       "System.IO/4.3.0": {
@@ -2174,22 +1772,16 @@
           "runtime.any.System.IO": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.5/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.5/_._": {}
         }
       },
       "System.IO.Pipelines/6.0.3": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.IO.Pipelines.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.IO.Pipelines.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.IO.Pipelines.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.IO.Pipelines.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -2205,9 +1797,7 @@
           "System.Runtime.Extensions": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.6/System.Linq.dll": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.6/System.Linq.dll": {}
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.dll": {}
@@ -2234,9 +1824,7 @@
           "runtime.any.System.Reflection": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.5/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.5/_._": {}
         }
       },
       "System.Reflection.Primitives/4.3.0": {
@@ -2248,9 +1836,7 @@
           "runtime.any.System.Reflection.Primitives": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.0/_._": {}
         }
       },
       "System.Resources.ResourceManager/4.3.0": {
@@ -2264,9 +1850,7 @@
           "runtime.any.System.Resources.ResourceManager": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.0/_._": {}
         }
       },
       "System.Runtime/4.3.0": {
@@ -2277,22 +1861,16 @@
           "runtime.any.System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.5/System.Runtime.dll": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -2306,9 +1884,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.5/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.5/_._": {}
         }
       },
       "System.Text.Encoding/4.3.0": {
@@ -2320,9 +1896,7 @@
           "runtime.any.System.Text.Encoding": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.3/_._": {}
         }
       },
       "System.Text.Encodings.Web/6.0.0": {
@@ -2331,14 +1905,10 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Text.Encodings.Web.dll": {}
         },
         "runtime": {
-          "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll": {
-            "related": ".xml"
-          }
+          "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -2351,14 +1921,10 @@
           "System.Text.Encodings.Web": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Text.Json.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.Text.Json.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -2373,9 +1939,7 @@
           "runtime.any.System.Threading.Tasks": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.3/_._": {}
         }
       }
     }
@@ -3483,7 +3047,7 @@
       ]
     },
     "Syncfusion.Blazor.Buttons/20.2.0.43": {
-      "sha512": "pIo4DvxrAzZPHUBA1r5K1I66hlHiZZoYjugK668KXM++PlDh1BkGnY6uslaICtcZRJKRIZjuRdG3pNN7KTDi5g==",
+      "sha512": "I1uP/fjMaph33HLn2NuN8hQfUeRWjExMy6CUWpi3Ap5Mqq98ZpRHdrC2sw8Yw336CP8OuL+YJiF8qcI3hZrxxA==",
       "type": "package",
       "path": "syncfusion.blazor.buttons/20.2.0.43",
       "files": [
@@ -3551,7 +3115,7 @@
       ]
     },
     "Syncfusion.Blazor.Core/20.2.0.43": {
-      "sha512": "xCXrOW/cqHnXzVCUFK3L96jFl6/E43VOXaZMYi+FjcTzPx1DRTfZlcBuK+f+PxsF+YzT9eDEf/LM2Qruw4nmKA==",
+      "sha512": "Zu0KRp5Nhe06GGG/efw6oZPSDR0mYsUv7/Usa25XxcW5jQw/E3A2MwksO89GO1cQbsyojUM76i0l2b77jlbl0w==",
       "type": "package",
       "path": "syncfusion.blazor.core/20.2.0.43",
       "files": [
@@ -3583,7 +3147,7 @@
       ]
     },
     "Syncfusion.Blazor.Data/20.2.0.43": {
-      "sha512": "mvFYZFtBymeJy4JTW3nQfPXDL72+0sINmtrVJWa1VnQU5mgVa3xksnVtsfxs2un4r+f/pwxW9Wgn8HRjQCR+kg==",
+      "sha512": "mHmVr95EUEe3q7yXN7llEQgGqZwtg8e6lU3oAML/5JVhcTfY0wU17ATrZ4vo1FFm2FpVfVkHaF/dpLh+vBqZYQ==",
       "type": "package",
       "path": "syncfusion.blazor.data/20.2.0.43",
       "files": [
@@ -3623,7 +3187,7 @@
       ]
     },
     "Syncfusion.Blazor.DropDowns/20.2.0.43": {
-      "sha512": "6Nxlt2S/CBA+vELWZ2l/MiYE8ouPQLsL3lp4wTSdH25HpBpuhAZHqdxULS75+jE1kiSISoPEY3DHqQ7qcYxYKQ==",
+      "sha512": "BVXFMShlSLhcGueRZQ1QKktEmcHa/PsgyV2cs/c0JlxWxWlkeCN9RuIs66JLZ6unEYEI3McTdbCHdn9Xhj7kpA==",
       "type": "package",
       "path": "syncfusion.blazor.dropdowns/20.2.0.43",
       "files": [
@@ -3672,7 +3236,7 @@
       ]
     },
     "Syncfusion.Blazor.Inputs/20.2.0.43": {
-      "sha512": "LSPNIiVTXUcpfbu4I+X6T9PnyrNrVvPWaXwSqu8eCii1tG+SyiSneUxIESoSdItlfXL35x+nDPyA/8wMZrdwlQ==",
+      "sha512": "Ojc5uQWS2FoUm3WGNfkDi3C7d7+EgztgGsYp7Lw+Fac8MkznBbeU//v57gGxQxZmbzZLgpIko3NcXOyAisHUiA==",
       "type": "package",
       "path": "syncfusion.blazor.inputs/20.2.0.43",
       "files": [
@@ -3701,7 +3265,7 @@
       ]
     },
     "Syncfusion.Blazor.Layouts/20.2.0.43": {
-      "sha512": "sKMxKZtGjPp9B5mKipVspO4B9EzmCvLzjibxcpmjFlMP10DNPrYWL1w2MsvsMoLF6CPbHi/+HR6SSfkqXHcJ8w==",
+      "sha512": "8eYIyZY3fSQw69p3ZWXthSxKPNIXtMjQoCGzuQS2Dk+ziGGbTkP596tHXjvTllyg4PIlJmX4zq7e/4/mIPmbmg==",
       "type": "package",
       "path": "syncfusion.blazor.layouts/20.2.0.43",
       "files": [
@@ -3725,7 +3289,7 @@
       ]
     },
     "Syncfusion.Blazor.Lists/20.2.0.43": {
-      "sha512": "HBpGsDv3ew3oIBdticWkg15TnnvMiBRaFtpzWIwHNPs8k7DO+Yir2SaRY5jPp7WH0blMlctzLNy2Btuj5pZlQA==",
+      "sha512": "GR4awVgdrKGlOVZTzQq4267Th3T3yxY0HNIB+9KFqXbgkTMxadb03tfyKcw+LHmkScgDojSgF8pYQ+ZWTp1+fw==",
       "type": "package",
       "path": "syncfusion.blazor.lists/20.2.0.43",
       "files": [
@@ -3748,7 +3312,7 @@
       ]
     },
     "Syncfusion.Blazor.Navigations/20.2.0.43": {
-      "sha512": "028FMnTx6DvEKIgHVEjZf2uAIZizU3sHOVdBbAILbjPFupGWy1FkJuvAOwi57mnqxgsGitZQGyKTnuNTT2Jfhw==",
+      "sha512": "rxVSrgr+9bgVUrL/Y4XFCOcifw8cNBWouiBYSe5PeAhwjgQyuMAbbe0Jk+96ATxxavpUD87K39ZltBSdBVnJzA==",
       "type": "package",
       "path": "syncfusion.blazor.navigations/20.2.0.43",
       "files": [
@@ -3780,7 +3344,7 @@
       ]
     },
     "Syncfusion.Blazor.Popups/20.2.0.43": {
-      "sha512": "IxzxYkDyDNNRunY90E8U5uJZ82BpRzov77vAu5EcANgc3XYxq2YAuOuB5jW8j/N2EG+w74yACoLtVjhQ8g8erg==",
+      "sha512": "ZHfU3ueBS+w033dwlQlSvrcQSecaOIVnit8QX+hwJABJajot2Ksf3HcSMTOIoiY27DiBeq7+iRU330rxE8FK0Q==",
       "type": "package",
       "path": "syncfusion.blazor.popups/20.2.0.43",
       "files": [
@@ -3804,7 +3368,7 @@
       ]
     },
     "Syncfusion.Blazor.Spinner/20.2.0.43": {
-      "sha512": "ETsT9FV+vu5spKY8DM87bko/lCIB7PtVI0J+snugp+QejQSPT0IHS6UD6uaaSs3lcIm6UOqASwSVZP5FxQcIjA==",
+      "sha512": "CZhRKJUaaM68XZlJupABLdxXAZLhQkLmHw8g3j91MVjJqTVoTmX2T9FfLTJ5aiHe+rWYHk+geqkbJ9pBG8PRTA==",
       "type": "package",
       "path": "syncfusion.blazor.spinner/20.2.0.43",
       "files": [
@@ -3828,7 +3392,7 @@
       ]
     },
     "Syncfusion.Blazor.SplitButtons/20.2.0.43": {
-      "sha512": "G84pxHFIPh7SYJf32mLshPsbJ2PlAS4eB2ReX1pa/zt7GNqOd2fn4pKThs4HwNfb2jGaJLU+5OQLQNLfaJRYrA==",
+      "sha512": "C6g77EidvYiZ1w+2oImAkgZxPtyHm3kYRIZ1DMznyzqvz/y7McuEoizszJIO0eI0BnKT1uDCUk72LKbpx3j4jA==",
       "type": "package",
       "path": "syncfusion.blazor.splitbuttons/20.2.0.43",
       "files": [
@@ -3901,38 +3465,6 @@
         "lib/netstandard2.0/Syncfusion.ExcelExport.Net.xml",
         "syncfusion.excelexport.net.core.20.2.0.43.nupkg.sha512",
         "syncfusion.excelexport.net.core.nuspec",
-        "syncfusion_logo.png"
-      ]
-    },
-    "Syncfusion.Licensing/20.2.0.43": {
-      "sha512": "6gcTsltYyA9EK7/FhIESvYAA1O9PrJQrXK1vyx3b0dbGa5oii22IBc4rmFIZvomrK7EFQDpkGpEtCQfUw+PMkA==",
-      "type": "package",
-      "path": "syncfusion.licensing/20.2.0.43",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "lib/MonoAndroid10.0/Syncfusion.Licensing.dll",
-        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
-        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
-        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
-        "lib/net20/Syncfusion.Licensing.dll",
-        "lib/net35/Syncfusion.Licensing.dll",
-        "lib/net40/Syncfusion.Licensing.dll",
-        "lib/net45/Syncfusion.Licensing.dll",
-        "lib/net451/Syncfusion.Licensing.dll",
-        "lib/net46/Syncfusion.Licensing.dll",
-        "lib/net5.0/Syncfusion.Licensing.dll",
-        "lib/net6.0/Syncfusion.Licensing.dll",
-        "lib/netcoreapp3.1/Syncfusion.Licensing.dll",
-        "lib/netstandard1.0/Syncfusion.Licensing.dll",
-        "lib/netstandard1.2/Syncfusion.Licensing.dll",
-        "lib/netstandard1.4/Syncfusion.Licensing.dll",
-        "lib/netstandard2.0/Syncfusion.Licensing.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
-        "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.20.2.0.43.nupkg.sha512",
-        "syncfusion.licensing.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -5000,26 +4532,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/elysioneins/.nuget/packages/": {}
+    "C:\\Users\\LEGION\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/SyncfusionBlazorApp.csproj",
+      "projectUniqueName": "C:\\Users\\LEGION\\Source\\Repos\\SyncfusionDashboard\\SyncfusionBlazorApp.csproj",
       "projectName": "SyncfusionBlazorApp",
-      "projectPath": "/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/SyncfusionBlazorApp.csproj",
-      "packagesPath": "/Users/elysioneins/.nuget/packages/",
-      "outputPath": "/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/obj/",
+      "projectPath": "C:\\Users\\LEGION\\Source\\Repos\\SyncfusionDashboard\\SyncfusionBlazorApp.csproj",
+      "packagesPath": "C:\\Users\\LEGION\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LEGION\\Source\\Repos\\SyncfusionDashboard\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+      ],
       "configFilePaths": [
-        "/Users/elysioneins/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\LEGION\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.telerik.com/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -5085,23 +4625,16 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[6.0.9, 6.0.9]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

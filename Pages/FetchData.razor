@@ -28,13 +28,13 @@ else
 
 @code {
     private SyncfusionBlazorApp.Pages.Index.SettleOrRegisterDTO[]? showDataArray;
-    public static List<SettleOrRegisterDTO> listRtn = new List<SettleOrRegisterDTO>();
+    public static List<SettleOrRegisterDTO>? listRtn = new List<SettleOrRegisterDTO>();
 
     protected override Task OnInitializedAsync()
     {
         Task.Run(async () =>
            {
-               String jsonStr = await _httpClient.GetFromJsonAsync<String>("/dashboard/detail_data");
+               String? jsonStr = await _httpClient.GetFromJsonAsync<String>("/dashboard/detail_data");
                listRtn  = JsonConvert.DeserializeObject<List<SettleOrRegisterDTO>>(jsonStr);
                showDataArray = listRtn.ToArray();                     
                await InvokeAsync(StateHasChanged);         

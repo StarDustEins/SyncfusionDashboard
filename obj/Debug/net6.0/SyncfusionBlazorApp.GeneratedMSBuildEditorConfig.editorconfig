@@ -11,41 +11,41 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = SyncfusionBlazorApp
 build_property.RootNamespace = SyncfusionBlazorApp
-build_property.ProjectDir = /Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/
+build_property.ProjectDir = C:\Users\LEGION\Source\Repos\SyncfusionDashboard\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp
+build_property.MSBuildProjectDirectory = C:\Users\LEGION\Source\Repos\SyncfusionDashboard
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/App.razor]
+[C:/Users/LEGION/Source/Repos/SyncfusionDashboard/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+[C:/Users/LEGION/Source/Repos/SyncfusionDashboard/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
+[C:/Users/LEGION/Source/Repos/SyncfusionDashboard/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+[C:/Users/LEGION/Source/Repos/SyncfusionDashboard/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+[C:/Users/LEGION/Source/Repos/SyncfusionDashboard/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/_Imports.razor]
+[C:/Users/LEGION/Source/Repos/SyncfusionDashboard/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-7lzxgg97gb
+[C:/Users/LEGION/Source/Repos/SyncfusionDashboard/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-zaroob0x1l
 
-[/Users/elysioneins/RiderProjects/SyncfusionBlazorApp/SyncfusionBlazorApp/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-88z7nhoh4s
+[C:/Users/LEGION/Source/Repos/SyncfusionDashboard/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-g3z47qju0t
