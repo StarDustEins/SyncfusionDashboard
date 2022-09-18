@@ -957,11 +957,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-u6CKxrqkQzRZzGXkGHXh0xEl9EFlJLes1D6Qkt9CwEc=",
+      "hash": "sha256-sbjeXqVzscsxlKHDLs0xNJklpCgUAsgRm26Edcjauxs=",
       "url": "_framework\/SyncfusionBlazorApp.dll"
     },
     {
-      "hash": "sha256-MmCaokSTqWqcDthxJTZ+yAKNdatqePDWn5KM1HUirug=",
+      "hash": "sha256-PkaEgPUGOLW65pJ3J5hP4hqnAG7J4\/MJZE9KWk4SeXo=",
       "url": "_framework\/SyncfusionBlazorApp.pdb"
     },
     {
@@ -969,7 +969,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-NiCK3mIOHXVGgT7KPIRm+rtMH6Yl6QMqLT7rsEjMPNc=",
+      "hash": "sha256-yBZsBi7f\/jiMuOnJmWCEnpSKz1fHZylcm\/HddP3I\/AQ=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -1225,5 +1225,5 @@
       "url": "_content\/Syncfusion.Blazor.Charts\/scripts\/sf-chart.min.js"
     }
   ],
-  "version": "BtD3tQTE"
+  "version": "3FsiDSD6"
 };
