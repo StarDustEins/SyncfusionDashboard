@@ -921,7 +921,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-WYno\/cK5MDsl5yi4T\/\/QgUskbBfhLL77i+c0uKzO9+c=",
+      "hash": "sha256-bt71pPPlbAms\/es1uhfXLwY08kC4IBCEvRJhHiAAyw0=",
       "url": "_framework\/dotnet.6.0.4.dckq00jdfr.js"
     },
     {
@@ -949,11 +949,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-OXXQ9UYV8yjoUB9J2cbOBst\/Ooj7pnKnhQckQB3NoyM=",
+      "hash": "sha256-c5BAGW+aFqLLY5ngb8EaPgYiyy3CJ9r8xbuE4JBbonE=",
       "url": "_framework\/SyncfusionBlazorApp.dll"
     },
     {
-      "hash": "sha256-PEPatX1PS9cu9Rnk92c\/ez1EV6OOwgmWQg6uYwPXPYE=",
+      "hash": "sha256-okNtSgDK9dtuXvO7td1mHUhTrwwSnYVRyQp4dkOQll4=",
       "url": "_framework\/SyncfusionBlazorApp.pdb"
     },
     {
@@ -961,7 +961,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-xsh9aIFznk+yTWEn8J8CiRqfEppxhun0QGyN1Cz\/Zgw=",
+      "hash": "sha256-ybuaPP+Se\/CgNdL4IzcE\/s24vzvVxhmXj3709neGmQ4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -1217,5 +1217,5 @@
       "url": "_content\/Syncfusion.Blazor.Charts\/scripts\/sf-chart.min.js"
     }
   ],
-  "version": "AHRb3Nxp"
+  "version": "c+AJPJ+J"
 };

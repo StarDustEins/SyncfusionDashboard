@@ -1,0 +1,1 @@
+C:\Users\LEGION\source\repos\SyncfusionDashboard\obj\Release\net6.0\browser-wasm\PubTmp\Out\web.config

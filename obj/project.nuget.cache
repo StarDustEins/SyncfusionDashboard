@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z6ciScTp7E8i6b2eXxMyr+FqSj7k2spt86bUMAGEpoSJBcHaIhMMpgbNwJx0jqg0L6s1jP4v4p4TMRz67dT6WA==",
+  "dgSpecHash": "ar0AODBNuDmINcOUC9BNvlPAcBNgdpwNlu3v7JCmlV9yc4FzUcwoVOqRSfdaDYCsqiGkusVdG2FtKAnFY+1xHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LEGION\\Source\\Repos\\SyncfusionDashboard\\SyncfusionBlazorApp.csproj",
+  "projectFilePath": "C:\\Users\\LEGION\\source\\repos\\SyncfusionDashboard\\SyncfusionBlazorApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LEGION\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.5\\microsoft.aspnetcore.authorization.6.0.5.nupkg.sha512",
     "C:\\Users\\LEGION\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.5\\microsoft.aspnetcore.components.6.0.5.nupkg.sha512",

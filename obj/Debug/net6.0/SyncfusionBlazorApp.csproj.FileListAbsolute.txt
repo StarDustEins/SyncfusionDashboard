@@ -2670,8 +2670,6 @@ C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\build-gz\GBzqT
 C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\build-gz\spMDMAVB.gz
 C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\build-gz\pb0TN5S5.gz
 C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\build-gz\xoHgfwMe.gz
-C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\build-gz\ah1oGuMB.gz
-C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\build-gz\d9KvlDwZ.gz
 C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\build-gz\yWQFHKPb.gz
 C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\blazor.boot.json
 C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\staticwebassets.build.json
@@ -2687,3 +2685,5 @@ C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\SyncfusionBlaz
 C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\refint\SyncfusionBlazorApp.dll
 C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\SyncfusionBlazorApp.pdb
 C:\Users\LEGION\Source\Repos\SyncfusionDashboard\obj\Debug\net6.0\ref\SyncfusionBlazorApp.dll
+C:\Users\LEGION\source\repos\SyncfusionDashboard\obj\Debug\net6.0\build-gz\aJDvYwwA.gz
+C:\Users\LEGION\source\repos\SyncfusionDashboard\obj\Debug\net6.0\build-gz\DaloKMpp.gz
